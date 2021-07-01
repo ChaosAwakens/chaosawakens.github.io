@@ -16,25 +16,65 @@
 				object-fit: contain;
 			}
 			
-			.titleImg {
+			.mainDiv {
+				height: 100%;
+				width: 100%;
+				background-image: linear-gradient(to bottom right, cornflowerblue, salmon);
+			}
+			
+			.titleImgDiv {
 				height: 50%;
 				width: 50%;
 				margin: auto;
 			}
 			
-			.mainDiv {
-				height: 100%;
-				width: 100%;
-				background-image: linear-gradient(to bottom right, #269CF7, #F25028);
+			.msgDiv {
+				text-align: center;
+			}
+			.buttonDiv {
+				display: flex;
+				justify-content: center;
+				margin: auto;
+			}
+			
+			button {
+				color: lavender;
+				border-radius: 8px;
+				font-size: 32px;
+				background: none;
+				border-color: cadetblue;
+			}
+			
+			button:hover {
+				transition: 1s;
+				background-color: cadetblue;
+			}
+			
+			button:active {
+				transition: 0.2s;
+				background-color: indianred;
+				border-color: indianred;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="mainDiv">
-			<div class="titleImg">
+			<div class="titleImgDiv">
 				<img src="images/title.png">
 			</div>
-			<div></div>
+			<div class="msgDiv">
+				<h1 style="color: lavender">
+					"<i>This site is a stub, please expand it by adding prs</i>"
+				</h1>
+			</div>
+			<div class="buttonDiv">
+				<form action="downloads.html">
+					<button>Downloads</button>
+				</form>
+				<form action="https://discord.gg/chaosawakens">
+					<button type="submit">Discord</button>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
