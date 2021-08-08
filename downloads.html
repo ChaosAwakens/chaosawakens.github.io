@@ -38,6 +38,11 @@
 				color: salmon;
 			}
 
+			.buttonDiv {
+				display: flex;
+				margin: auto;
+			}
+
 			button {
 				color: lavender;
 				border-radius: 8px;
@@ -48,6 +53,8 @@
   				padding-right: 20px;
   				padding-bottom: 5px;
   				padding-left: 20px;
+				margin-right: 20px;
+				margin-left: 20px;
 			}
 
 			button:hover {
@@ -68,9 +75,8 @@
 			Downloads
 			</b>
 		</div>
-		<br>
 		<div style="font-size:32px">
-			<a href="https://www.curseforge.com/minecraft/mc-mods/geckolib/files">GeckoLib is Required for Chaos Awakens to Run</a>
+			<a href="https://www.curseforge.com/minecraft/mc-mods/geckolib/files"><b>GeckoLib is REQUIRED</b></a>
 			<br>
 			<br>
 			<b style="font-size:36px">Latest Release: </b>
@@ -90,7 +96,10 @@
 			<br>
 			<a href="versions/ChaosAwakensBeta1.16.5v0.7.jar">ChaosAwakensBeta1.16.5v0.7.jar</a>
 			<br>
+			<!--
 			<a href="versions/ChaosAwakensBeta1.16.5v0.6.jar">ChaosAwakensBeta1.16.5v0.6.jar</a>
+			-->
+			ChaosAwakensBeta1.16.5v0.6.jar | UNAVAILABLE
 			<br>
 			<a href="versions/ChaosAwakensBeta1.16.5v0.5.jar">ChaosAwakensBeta1.16.5v0.5.jar</a>
 			<br>
@@ -103,8 +112,13 @@
 			<a href="versions/ChaosAwakensAlpha1.16.5v0.1.jar">ChaosAwakensAlpha1.16.5v0.1.jar</a>
 		</div>
 		<br>
-		<form action="index.html">
-			<button>Main Page</button>
-		</form>
+		<div class="buttonDiv">
+			<form action="index.html">
+				<button>Main Page</button>
+			</form>
+			<form action="changelog.html">
+				<button>Changelog</button>
+			</form>
+		</div>
 	</body>
 </html>
