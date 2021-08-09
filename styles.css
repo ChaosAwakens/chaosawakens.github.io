@@ -1,0 +1,150 @@
+:root {
+	--g-colour-1: cornflowerblue;
+	--g-colour-2: salmon;
+	--text-colour: lavender;
+	--shadow-colour: dimgray;
+}
+
+head, body {
+    height: 100%;
+	width: 100%;
+	margin: 0;
+	border: 0;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.info {
+	color: var(--text-colour);
+	text-shadow: 2px 2px var(--shadow-colour);
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	color: var(--text-colour);
+    background-image: linear-gradient(to bottom right, var(--g-colour-1), var(--g-colour-2));
+}
+
+p {
+	font-size: 20px;
+}
+
+.mainText {
+	color: var(--text-colour);
+	text-shadow: 2px 2px var(--shadow-colour);
+}
+
+div.downloadsANDchangelog {
+	margin-left: 16px;
+	font-size: 32px;
+}
+
+div.downloadsANDchangelogMainText {
+	margin-left: 16px;
+	color: var(--text-colour);
+	text-shadow: 2px 2px var(--shadow-colour);
+}
+
+a {
+	color: lightblue;
+}
+
+a:hover {
+	color: darkcyan;
+}
+
+a:active {
+	color: var(--g-colour-2);
+}
+
+.titleImgDiv {
+	width: 750px;
+	margin: auto;
+}
+
+.msgDiv {
+	text-align: center;
+}
+
+.buttonDiv {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+button {
+	color: var(--text-colour);
+	text-shadow: 2px 2px var(--shadow-colour);
+	border-radius: 8px;
+	font-size: 32px;
+	background: none;
+	border-color: cadetblue;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+button:hover {
+	transition: 1s;
+	background-color: cadetblue;
+}
+
+button:active {
+	transition: 0.2s;
+	background-color: indianred;
+	border-color: indianred;
+}
+
+button.addon {
+	color: lavender;
+	border-radius: 8px;
+	font-size: 32px;
+	text-shadow: 2px 2px dimgray;
+	background: none;
+	border-color: cadetblue;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+button.addon:hover {
+	transition: 1s;
+	background-color: cadetblue;
+}
+
+button.addon:active {
+	transition: 0.2s;
+	background-color: indianred;
+	border-color: indianred;
+}
+
+.image {
+	outline-style: solid;
+	outline-color: cadetblue;
+	outline-width: 2px;
+}
+
+.image:hover {
+	transition: 1s;
+	outline-style: solid;
+	outline-color: cadetblue;
+	outline-width: 2px;
+}
+
+.image:active {
+	transition: 0.2s;
+	outline-style: solid;
+	outline-color: indianred;
+	outline-width: 3px;
+}
