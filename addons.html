@@ -4,11 +4,6 @@
 	<meta charset="utf-8"/>
 	<title>Addons | Chaos Awakens</title>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-		html, body {
-			height: 100%;
-		}
-	</style>
 </head>
 <body>
 <div class="mainDiv">
@@ -55,11 +50,129 @@
 	</div>
 	<br>
 	<br>
-	<div class="buttonDiv">
+	<div class="buttonDivBottom">
 		<form action="index.html">
 			<button>Main Page</button>
 		</form>
 	</div>
 </div>
 </body>
+<style>
+
+	body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		color: var(--text-colour);
+		background-image: linear-gradient(to bottom right, var(--g-colour-1), var(--g-colour-2));
+	}
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+		object-fit: contain;
+	}
+
+	.info {
+		color: var(--text-colour);
+		text-shadow: 2px 2px var(--shadow-colour);
+	}
+	p {
+		font-size: 20px;
+	}
+
+	a {
+		color: lightblue;
+	}
+
+	a:hover {
+		color: darkcyan;
+	}
+
+	a:active {
+		color: var(--g-colour-2);
+	}
+
+	.titleImgDiv {
+		width: 750px;
+		margin: auto;
+	}
+
+	.msgDiv {
+		text-align: center;
+	}
+
+	.buttonDiv {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+	}
+
+	.buttonDivBottom {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		padding-bottom: 16px;
+	}
+
+	button {
+		color: var(--text-colour);
+		text-shadow: 2px 2px var(--shadow-colour);
+		border-radius: 8px;
+		font-size: 32px;
+		background: none;
+		border-color: cadetblue;
+		padding: 5px 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	button:hover {
+		transition: 1s;
+		background-color: cadetblue;
+	}
+
+	button:active {
+		transition: 0.2s;
+		background-color: indianred;
+		border-color: indianred;
+	}
+
+	button.addon {
+		color: lavender;
+		border-radius: 8px;
+		font-size: 32px;
+		text-shadow: 2px 2px dimgray;
+		background: none;
+		border-color: cadetblue;
+		padding: 20px 20px 10px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	button.addon:hover {
+		transition: 1s;
+		background-color: cadetblue;
+	}
+
+	button.addon:active {
+		transition: 0.2s;
+		background-color: indianred;
+		border-color: indianred;
+	}
+
+	.image {
+		outline: cadetblue solid 2px;
+	}
+
+	.image:hover {
+		transition: 1s;
+		outline: cadetblue solid 2px;
+	}
+
+	.image:active {
+		transition: 0.2s;
+		outline: indianred solid 3px;
+	}
+</style>
 </html>

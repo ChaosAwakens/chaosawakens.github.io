@@ -4,22 +4,17 @@
 	<meta charset="utf-8">
 	<title>Downloads | Chaos Awakens</title>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-		html, body {
-			height: 100%;
-		}
-
-		.buttonDiv {
-			justify-content: left;
-		}
-	</style>
 </head>
 <body>
+<br>
 <div class="downloadsANDchangelogMainText" style="font-size:64px">
 	<b>Downloads</b>
 </div>
+<br>
 <div class="downloadsANDchangelog">
 	<a href="https://www.curseforge.com/minecraft/mc-mods/geckolib/files"><b>GeckoLib is REQUIRED</b></a>
+	<br>
+	<a href="https://www.curseforge.com/minecraft/mc-mods/attributefix/files"><b>Attributefix is Recommended</b></a>
 	<br>
 	<br>
 	<b class="mainText" style="font-size:36px">Latest Release: </b>
@@ -55,6 +50,7 @@
 	<a href="versions/ChaosAwakensAlpha1.16.5v0.1.jar">ChaosAwakensAlpha1.16.5v0.1.jar</a>
 </div>
 <br>
+<br>
 <div class="buttonDiv">
 	<form action="index.html">
 		<button>Main Page</button>
@@ -64,4 +60,81 @@
 	</form>
 </div>
 </body>
+<style>
+	body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		color: var(--text-colour);
+		background-image: linear-gradient(to bottom right, var(--g-colour-1), var(--g-colour-2));
+	}
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+		object-fit: contain;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.mainText {
+		color: var(--text-colour);
+		text-shadow: 2px 2px var(--shadow-colour);
+	}
+
+	div.downloadsANDchangelog {
+		margin-left: 16px;
+		font-size: 32px;
+	}
+
+	div.downloadsANDchangelogMainText {
+		margin-left: 16px;
+		color: var(--text-colour);
+		text-shadow: 2px 2px var(--shadow-colour);
+	}
+
+	a {
+		color: lightblue;
+	}
+
+	a:hover {
+		color: darkcyan;
+	}
+
+	a:active {
+		color: var(--g-colour-2);
+	}
+
+	.buttonDiv {
+		display: flex;
+		justify-content: left;
+		margin: auto;
+		padding-bottom: 39px;
+	}
+
+	button {
+		color: var(--text-colour);
+		text-shadow: 2px 2px var(--shadow-colour);
+		border-radius: 8px;
+		font-size: 32px;
+		background: none;
+		border-color: cadetblue;
+		padding: 5px 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	button:hover {
+		transition: 1s;
+		background-color: cadetblue;
+	}
+
+	button:active {
+		transition: 0.2s;
+		background-color: indianred;
+		border-color: indianred;
+	}
+</style>
 </html>

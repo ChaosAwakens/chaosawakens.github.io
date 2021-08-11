@@ -8,17 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Home | Chaos Awakens</title>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-		html, body {
-			height: 100%;
-		}
-	</style>
 </head>
 <body>
 <div class="mainDiv">
 	<br>
 	<div class="titleImgDiv">
-		<img src="images/title.png">
+		<img src="images/title.png" alt="Chaos Awakens Logo">
 	</div>
 	<br>
 	<br>
@@ -38,14 +33,14 @@
 	<div class="buttonDiv">
 		<form action="https://discord.gg/chaosawakens">
 			<button>
-				<img class="image" src="https://cdn.discordapp.com/icons/790637112546033665/a_e29d560fdff6fa75719262ca53d37538.gif?size=128">
+				<img class="image" src="https://cdn.discordapp.com/icons/790637112546033665/a_e29d560fdff6fa75719262ca53d37538.gif?size=128" alt="Chaos Awakens Discord Icon.">
 				<br>
 				Discord
 			</button>
 		</form>
 		<form action="addons.html">
 			<button>
-				<img class="image" src="https://cdn.discordapp.com/icons/849030904747393135/cd2ee379afc55803e6bc098a2ef35245.webp?size=128">
+				<img class="image" src="https://cdn.discordapp.com/icons/849030904747393135/cd2ee379afc55803e6bc098a2ef35245.webp?size=128" alt="Chaos Awakens Addons Page Icon.">
 				<br>
 				Addons
 			</button>
@@ -63,4 +58,93 @@
 	</div>
 </div>
 </body>
+<style>
+	html, body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		color: var(--text-colour);
+		background-image: linear-gradient(to bottom right, var(--g-colour-1), var(--g-colour-2));
+	}
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+		object-fit: contain;
+	}
+
+	.info {
+		color: var(--text-colour);
+		text-shadow: 2px 2px var(--shadow-colour);
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	a {
+		color: lightblue;
+	}
+
+	a:hover {
+		color: darkcyan;
+	}
+
+	a:active {
+		color: var(--g-colour-2);
+	}
+
+	.titleImgDiv {
+		width: 750px;
+		margin: auto;
+	}
+
+	.msgDiv {
+		text-align: center;
+	}
+
+	.buttonDiv {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		padding-bottom: 25px;
+	}
+
+	button {
+		color: var(--text-colour);
+		text-shadow: 2px 2px var(--shadow-colour);
+		border-radius: 8px;
+		font-size: 32px;
+		background: none;
+		border-color: cadetblue;
+		padding: 5px 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	button:hover {
+		transition: 1s;
+		background-color: cadetblue;
+	}
+
+	button:active {
+		transition: 0.2s;
+		background-color: indianred;
+		border-color: indianred;
+	}
+
+	.image {
+		outline: cadetblue solid 2px;
+	}
+
+	.image:hover {
+		transition: 1s;
+		outline: cadetblue solid 2px;
+	}
+
+	.image:active {
+		transition: 0.2s;
+		outline: indianred solid 3px;
+	}
+</style>
 </html>
