@@ -165,6 +165,15 @@
         <button>Downloads</button>
     </form>
 </div>
+<div class="theme">
+    Choose your theme:
+    <label for="theme-selector"></label>
+    <select id="theme-selector">
+        <option value="fairyfloss">Fairy Floss</option>
+        <option value="dark">Dark</option>
+        <option value="matrix">Matrix</option>
+    </select>
+</div>
 </body>
 <style>
     body {
@@ -226,7 +235,7 @@
         border-radius: 8px;
         font-size: 32px;
         background: none;
-        border-color: cadetblue;
+        border-color: var(--cadetblue);
         padding: 5px 20px;
         margin-right: 20px;
         margin-left: 20px;
@@ -234,13 +243,68 @@
 
     button:hover {
         transition: 1s;
-        background-color: cadetblue;
+        background-color: var(--cadetblue);
     }
 
     button:active {
         transition: 0.2s;
-        background-color: indianred;
-        border-color: indianred;
+        background-color: var(--indianred);
+        border-color: var(--indianred);
+    }
+
+    .theme {
+        font-size: 16px;
+    }
+
+    select {
+        color: var(--text-colour);
+        text-shadow: 2px 2px var(--shadow-colour);
+        border-radius: 8px;
+        font-size: 16px;
+        background: var(--none);
+        border-color: var(--cadetblue);
+        padding: 5px 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    select:hover {
+        transition: 0s;
+        background-color: black;
+    }
+
+    select:active {
+        transition: 0.2s;
+        background-color: var(--none);
+        border-color: var(--indianred);
     }
 </style>
+<script>
+    window.onload = function() {
+        // Try to read from local storage, otherwise set to default
+        let currentTheme = localStorage.getItem("mytheme") || "fairyfloss";
+
+        setTheme("fairyfloss", currentTheme);
+
+        const themeSelector = document.getElementById("theme-selector");
+        themeSelector.value = currentTheme;
+
+        themeSelector.addEventListener("change", function(e) {
+            const newTheme = e.currentTarget.value;
+            setTheme(currentTheme, newTheme);
+        });
+
+        function setTheme(oldTheme, newTheme) {
+            const body = document.getElementsByTagName("body")[0];
+
+            body.classList.remove(oldTheme);
+            body.classList.add(newTheme);
+
+            currentTheme = newTheme;
+
+            // Store the new theme in local storage
+            localStorage.setItem("mytheme", newTheme);
+        }
+    };
+</script>
 </html>

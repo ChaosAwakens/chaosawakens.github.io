@@ -1,178 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<title>Addons | Chaos Awakens</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8"/>
+    <title>Addons | Chaos Awakens</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="mainDiv">
-	<br>
-	<div class="titleImgDiv">
-		<img src="images/title.png">
-	</div>
-	<div class="msgDiv">
-		<h1 class="info" style="font-size: 22px">
-			<b>Chaos Devourer is created by Wounded and Blackout. It is available at: Chaos Awakens Addons</b> <br>
-			<b>Naval Armaments is created by Aqu. It is available at: Navy of Atlantica</b> <br>
-			<b>Pure Chaos is created by Renato. It is available at: Rev's Studio</b>
-		</h1>
-	</div>
-	<br>
-	<div class="buttonDiv">
-		<form action="https://discord.gg/Y26jmyPC7v">
-			<button class="addon">
-				<img class="image" src="https://media.discordapp.net/attachments/849030904751587330/875405441734176848/chaos_addons_logoinvert.png?width=128&height=128" alt="Chaos Addons Discord">
-				<br>
-				Chaos Awakens Addons
-			</button>
-		</form>
-	</div>
-	<br>
-	<br>
-	<div class="buttonDiv">
-		<form action="https://discord.gg/E8mD769vZ3">
-			<button class="addon">
-				<img class="image" src="https://cdn.discordapp.com/icons/643196990544543754/867d28201cc04725ac3e84e8063fc250.webp?size=128" alt="Rev's Studios Discord">
-				<br>
-				Rev's <br>
-				Studios
-			</button>
-		</form>
-		<form action="https://discord.gg/2jQkWa36bW">
-			<button class="addon">
-				<img class="image" src="https://cdn.discordapp.com/icons/805752126113841163/f0aa173d62693fc04dfb300562a6d6ec.webp?size=128" alt="Navy of Atlantica Discord">
-				<br>
-				Navy of <br>
-				Atlantica
-			</button>
-		</form>
-	</div>
-	<br>
-	<br>
-	<div class="buttonDivBottom">
-		<form action="index.html">
-			<button>Main Page</button>
-		</form>
-	</div>
+    <br>
+    <div class="titleImgDiv">
+        <img src="images/title.png">
+    </div>
+    <div class="msgDiv">
+        <h1 class="info" style="font-size: 22px">
+            <b>Chaos Devourer is created by Wounded and Blackout. It is available at: Chaos Awakens Addons</b> <br>
+            <b>Naval Armaments is created by Aqu. It is available at: Navy of Atlantica</b> <br>
+            <b>Pure Chaos is created by Renato. It is available at: Rev's Studio</b>
+        </h1>
+    </div>
+    <br>
+    <div class="buttonDiv">
+        <form action="https://discord.gg/Y26jmyPC7v">
+            <button class="addon">
+                <img class="image" src="https://media.discordapp.net/attachments/849030904751587330/875405441734176848/chaos_addons_logoinvert.png?width=128&height=128" alt="Chaos Addons Discord">
+                <br>
+                Chaos Awakens Addons
+            </button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="buttonDiv">
+        <form action="https://discord.gg/E8mD769vZ3">
+            <button class="addon">
+                <img class="image" src="https://cdn.discordapp.com/icons/643196990544543754/867d28201cc04725ac3e84e8063fc250.webp?size=128" alt="Rev's Studios Discord">
+                <br>
+                Rev's <br>
+                Studios
+            </button>
+        </form>
+        <form action="https://discord.gg/2jQkWa36bW">
+            <button class="addon">
+                <img class="image" src="https://cdn.discordapp.com/icons/805752126113841163/f0aa173d62693fc04dfb300562a6d6ec.webp?size=128" alt="Navy of Atlantica Discord">
+                <br>
+                Navy of <br>
+                Atlantica
+            </button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="buttonDivBottom">
+        <form action="index.html">
+            <button>Main Page</button>
+        </form>
+    </div>
+</div>
+<div class="theme">
+    Choose your theme:
+    <label for="theme-selector"></label>
+    <select id="theme-selector">
+        <option value="fairyfloss">Fairy Floss</option>
+        <option value="dark">Dark</option>
+        <option value="matrix">Matrix</option>
+    </select>
 </div>
 </body>
 <style>
 
-	body {
-		height: 100%;
-		width: 100%;
-		margin: 0;
-		color: var(--text-colour);
-		background-image: linear-gradient(to bottom right, var(--g-colour-1), var(--g-colour-2));
-	}
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        color: var(--text-colour);
+        background-image: linear-gradient(to bottom right, var(--g-colour-1), var(--g-colour-2));
+    }
 
-	img {
-		max-height: 100%;
-		max-width: 100%;
-		object-fit: contain;
-	}
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
 
-	.info {
-		color: var(--text-colour);
-		text-shadow: 2px 2px var(--shadow-colour);
-	}
-	p {
-		font-size: 20px;
-	}
+    .info {
+        color: var(--text-colour);
+        text-shadow: 2px 2px var(--shadow-colour);
+    }
+    p {
+        font-size: 20px;
+    }
 
-	a {
-		color: lightblue;
-	}
+    a {
+        color: lightblue;
+    }
 
-	a:hover {
-		color: darkcyan;
-	}
+    a:hover {
+        color: darkcyan;
+    }
 
-	a:active {
-		color: var(--g-colour-2);
-	}
+    a:active {
+        color: var(--g-colour-2);
+    }
 
-	.titleImgDiv {
-		width: 750px;
-		margin: auto;
-	}
+    .titleImgDiv {
+        width: 750px;
+        margin: auto;
+    }
 
-	.msgDiv {
-		text-align: center;
-	}
+    .msgDiv {
+        text-align: center;
+    }
 
-	.buttonDiv {
-		display: flex;
-		justify-content: center;
-		margin: auto;
-	}
+    .buttonDiv {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
 
-	.buttonDivBottom {
-		display: flex;
-		justify-content: center;
-		margin: auto;
-		padding-bottom: 16px;
-	}
+    .buttonDivBottom {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 16px;
+    }
 
-	button {
-		color: var(--text-colour);
-		text-shadow: 2px 2px var(--shadow-colour);
-		border-radius: 8px;
-		font-size: 32px;
-		background: none;
-		border-color: cadetblue;
-		padding: 5px 20px;
-		margin-right: 20px;
-		margin-left: 20px;
-	}
+    button {
+        color: var(--text-colour);
+        text-shadow: 2px 2px var(--shadow-colour);
+        border-radius: 8px;
+        font-size: 32px;
+        background: none;
+        border-color: var(--cadetblue);
+        padding: 5px 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 
-	button:hover {
-		transition: 1s;
-		background-color: cadetblue;
-	}
+    button:hover {
+        transition: 1s;
+        background-color: var(--cadetblue);
+    }
 
-	button:active {
-		transition: 0.2s;
-		background-color: indianred;
-		border-color: indianred;
-	}
+    button:active {
+        transition: 0.2s;
+        background-color: var(--indianred);
+        border-color: var(--indianred);
+    }
 
-	button.addon {
-		color: lavender;
-		border-radius: 8px;
-		font-size: 32px;
-		text-shadow: 2px 2px dimgray;
-		background: none;
-		border-color: cadetblue;
-		padding: 20px 20px 10px;
-		margin-right: 20px;
-		margin-left: 20px;
-	}
+    button.addon {
+        color: lavender;
+        border-radius: 8px;
+        font-size: 32px;
+        text-shadow: 2px 2px dimgray;
+        background: none;
+        border-color: var(--cadetblue);
+        padding: 20px 20px 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 
-	button.addon:hover {
-		transition: 1s;
-		background-color: cadetblue;
-	}
+    button.addon:hover {
+        transition: 1s;
+        background-color: var(--cadetblue);
+    }
 
-	button.addon:active {
-		transition: 0.2s;
-		background-color: indianred;
-		border-color: indianred;
-	}
+    button.addon:active {
+        transition: 0.2s;
+        background-color: var(--indianred);
+        border-color: var(--indianred);
+    }
 
-	.image {
-		outline: cadetblue solid 2px;
-	}
+    .image {
+        outline: var(--cadetblue) solid 2px;
+    }
 
-	.image:hover {
-		transition: 1s;
-		outline: cadetblue solid 2px;
-	}
+    .image:hover {
+        transition: 1s;
+        outline: var(--cadetblue) solid 2px;
+    }
 
-	.image:active {
-		transition: 0.2s;
-		outline: indianred solid 3px;
-	}
+    .image:active {
+        transition: 0.2s;
+        outline: var(--indianred) solid 3px;
+    }
+
+    .theme {
+        font-size: 16px;
+    }
+
+    select {
+        color: var(--text-colour);
+        text-shadow: 2px 2px var(--shadow-colour);
+        border-radius: 8px;
+        font-size: 16px;
+        background: var(--none);
+        border-color: var(--cadetblue);
+        padding: 5px 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    select:hover {
+        transition: 0s;
+        background-color: black;
+    }
+
+    select:active {
+        transition: 0.2s;
+        background-color: var(--none);
+        border-color: var(--indianred);
+    }
 </style>
+<script>
+    window.onload = function() {
+        // Try to read from local storage, otherwise set to default
+        let currentTheme = localStorage.getItem("mytheme") || "fairyfloss";
+
+        setTheme("fairyfloss", currentTheme);
+
+        const themeSelector = document.getElementById("theme-selector");
+        themeSelector.value = currentTheme;
+
+        themeSelector.addEventListener("change", function(e) {
+            const newTheme = e.currentTarget.value;
+            setTheme(currentTheme, newTheme);
+        });
+
+        function setTheme(oldTheme, newTheme) {
+            const body = document.getElementsByTagName("body")[0];
+
+            body.classList.remove(oldTheme);
+            body.classList.add(newTheme);
+
+            currentTheme = newTheme;
+
+            // Store the new theme in local storage
+            localStorage.setItem("mytheme", newTheme);
+        }
+    };
+</script>
 </html>
