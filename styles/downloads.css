@@ -51,7 +51,7 @@ div.downloadsANDchangelogMainText {
 .content {
 	background-color: var(--content-bg);
 	border: none;
-	max-height: 0px;
+	max-height: 0;
 	overflow: hidden;
 	transition: max-height .01s ease-in-out;
 }
@@ -68,6 +68,26 @@ div.downloadsANDchangelogMainText {
 .label {
 	font-size: 32px;
 	user-select: none;
+}
+
+#toggle-0901:checked + #label-0901 + #content-0901 {
+	max-height: 100%;
+	width: 100%;
+	padding: .5rem 1rem;
+	border-left: 4px solid var(--border-color-1);
+	border-bottom: 4px solid var(--border-color-2);
+	border-right: 4px solid var(--border-color-2);
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#toggle-0901:checked + #label-0901 {
+	border-top: 4px solid var(--border-color-1);
+	border-left: 4px solid var(--border-color-1);
+	border-bottom: none;
+	border-right: 4px solid var(--border-color-2);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 #toggle-0900:checked + #label-0900 + #content-0900 {

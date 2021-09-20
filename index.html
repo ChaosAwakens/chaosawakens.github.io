@@ -12,47 +12,47 @@
 	<link rel="stylesheet" href="styles/downloads.css">
 </head>
 <body>
-	<div id="mainDiv">
-		<div id="topDiv">
-			<form class="buttonForm" action="#downloadsDiv">
-				<button>Downloads</button>
-			</form>
-			<form class="buttonForm" action="#discordDiv">
-				<button>Discord</button>
-			</form>
-			<div id="titleImgDiv">
-				<img src="resources/images/title.png" alt="Chaos Awakens Logo">
-			</div>
-			<form class="buttonForm" action="#addonDiv">
-				<button>Add-ons</button>
-			</form>
-			<form class="buttonForm" action="https://github.com/ChaosAwakens/ChaosAwakens">
-				<button>Github</button>
-			</form>
+<div id="mainDiv">
+	<div id="topDiv">
+		<form class="buttonForm" action="#downloadsDiv">
+			<button>Downloads</button>
+		</form>
+		<form class="buttonForm" action="#discordDiv">
+			<button>Discord</button>
+		</form>
+		<div id="titleImgDiv">
+			<img src="resources/images/title.png" alt="Chaos Awakens Logo">
 		</div>
+		<form class="buttonForm" action="#addonDiv">
+			<button>Add-ons</button>
+		</form>
+		<form class="buttonForm" action="https://github.com/ChaosAwakens/ChaosAwakens">
+			<button>Github</button>
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="msgDiv">
 		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<div id="msgDiv">
-			<br>
-			<h1 class="info">
-				<b>Chaos Awakens is a Spiritual Successor of Orespawn!</b><br>
-				You can download the mod and view the changelogs below.<br>
-				You can join the discord for Chaos Awakens and Addons.
-			</h1>
-		</div>
-		<br>
+		<h1 class="info">
+			<b>Chaos Awakens is a Spiritual Successor of Orespawn!</b><br>
+			You can download the mod and view the changelogs below.<br>
+			You can join the discord for Chaos Awakens and Addons.
+		</h1>
+	</div>
+	<br>
 	<div id="downloadsDiv">
 		<div class="downloadsANDchangelogMainText" style="font-size:64px">
-		    <b>Downloads</b>
+			<b>Downloads</b>
 		</div>
 		<br>
 		<a href="https://www.curseforge.com/minecraft/mc-mods/geckolib/files" class="link"><b>GeckoLib is REQUIRED</b></a>
@@ -63,6 +63,24 @@
 		<b class="mainText" style="font-size:36px">Latest Release: </b>
 		<br>
 		<div class="collapse-wrapper">
+			<input id="toggle-0901" class="collapse" type="checkbox">
+			<label for="toggle-0901" id="label-0901" class="label">
+				<a id="link" href="resources/versions/chaosawakens-1.16.5-0.9.0.1.jar">Chaos Awakens - 1.16.5 - 0.9.0.1</a>
+				<div class="changelog-text" style="float:right">Click to open changelog</div>
+			</label>
+			<div id="content-0901" class="content">
+				<p>
+					- Fixed ultimate gear being uncraftable. <br>
+					- Ultimate gear can no longer be crafted with netherite, it requires platinum. <br>
+					- Fixed hercules beetle and stink bug animations. <br>
+					- Read 0.9.0.0 Changelog.
+				</p>
+			</div>
+		</div>
+		<br>
+		<br>
+		<b class="mainText" style="font-size:36px">Archived Releases: </b>
+		<div class="collapse-wrapper">
 			<input id="toggle-0900" class="collapse" type="checkbox">
 			<label for="toggle-0900" id="label-0900" class="label">
 				<a id="link" href="resources/versions/chaosawakens-1.16.5-0.9.0.0.jar">Chaos Awakens - 1.16.5 - 0.9.0.0</a>
@@ -70,41 +88,38 @@
 			</label>
 			<div id="content-0900" class="content">
 				<p>
-					 - Added corn and tomato crops work *and* generate in the world. <br>
-					 - Added Advancements. <br>
-					 - Ant nests now spawn and function! <br>
-					 - Illusioners can now spawn in village raids! <br>
-					 - Giants now have some AI! <br>
-					 - You can trade for some Chaos Awakens items from villagers! Try a farmer, butcher, fletcher or a wandering trader, you may get lucky. <br>
-					 - Added spawn eggs for some vanilla mobs. The illusioner, the giant, the wither and the ender dragon. <br>
-					 - Added 7 new variants of Ent(for every vanilla wood type), for your Ent-y needs! <br>
-					 - Added 7 new variants of Ent Tree dungeons and updated the trap! Gotta see 'em all! <br>
-					 - Added Wasps and their hives. <br>
-					 - Added the Stinkbug and the Dead Stinkbug item. <br>
-					 - Ore generation rebalances! <br>
-					 - Added nether ruby ore. <br>
-					 - Added apple, cherry and peach trees with delicious fruits! <br>
-					 - Added big bertha and the blade, the guard and the handle! <br>
-					 - Added battleaxe and queen scale battleaxe! <br>
-					 - Added moth scale, royal guardian and queen scale armors! <br>
-					 - Added miners dream! The mines are mineier! <br>
-					 - Added queen scale, ender dragon scale, mantis claw, moth scales, nightmare scale, vortex eye and triffid goo! <br>
-					 - Added random teleport block! <br>
-					 - Added custom tooltip descriptions. <br>
-					 - Changes to Village Mania. <br>
-					 - Added extra config options. <br>
-					 - You can now breed enchanted golden apple cows if you enable a config option. <br>
-					 - You can make zombie, skeletons, creepers and the ender dragon drop their mob heads or disable it with a config option. <br>
-					 - You can make the ender dragon place a dragon egg after each death instead of only the first death. <br>
-					 - Bug fixes! <br>
+					- Added corn and tomato crops work *and* generate in the world. <br>
+					- Added Advancements. <br>
+					- Ant nests now spawn and function! <br>
+					- Illusioners can now spawn in village raids! <br>
+					- Giants now have some AI! <br>
+					- You can trade for some Chaos Awakens items from villagers! Try a farmer, butcher, fletcher or a wandering trader, you may get lucky. <br>
+					- Added spawn eggs for some vanilla mobs. The illusioner, the giant, the wither and the ender dragon. <br>
+					- Added 7 new variants of Ent(for every vanilla wood type), for your Ent-y needs! <br>
+					- Added 7 new variants of Ent Tree dungeons and updated the trap! Gotta see 'em all! <br>
+					- Added Wasps and their hives. <br>
+					- Added the Stinkbug and the Dead Stinkbug item. <br>
+					- Ore generation rebalances! <br>
+					- Added nether ruby ore. <br>
+					- Added apple, cherry and peach trees with delicious fruits! <br>
+					- Added big bertha and the blade, the guard and the handle! <br>
+					- Added battleaxe and queen scale battleaxe! <br>
+					- Added moth scale, royal guardian and queen scale armors! <br>
+					- Added miners dream! The mines are mineier! <br>
+					- Added queen scale, ender dragon scale, mantis claw, moth scales, nightmare scale, vortex eye and triffid goo! <br>
+					- Added random teleport block! <br>
+					- Added custom tooltip descriptions. <br>
+					- Changes to Village Mania. <br>
+					- Added extra config options. <br>
+					- You can now breed enchanted golden apple cows if you enable a config option. <br>
+					- You can make zombie, skeletons, creepers and the ender dragon drop their mob heads or disable it with a config option. <br>
+					- You can make the ender dragon place a dragon egg after each death instead of only the first death. <br>
+					- Bug fixes! <br>
 					- <i>Lore intensifies!</i> You can disable tooltips if you want to, they exist now. <br>
-					 - And a lot more!
+					- And a lot more!
 				</p>
 			</div>
 		</div>
-		<br>
-		<br>
-		<b class="mainText" style="font-size:36px">Archived Releases: </b>
 		<div class="collapse-wrapper">
 			<input id="toggle-08D" class="collapse" type="checkbox">
 			<label for="toggle-08D" id="label-08D" class="label">
@@ -113,7 +128,7 @@
 			</label>
 			<div id="content-08D" class="content">
 				<p>
-				- Added Random Teleport Block.
+					- Added Random Teleport Block.
 				</p>
 			</div>
 		</div>
