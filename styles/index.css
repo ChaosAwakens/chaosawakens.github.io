@@ -1,0 +1,132 @@
+html, body {
+	min-width: 100%;
+	min-height: 100%;
+    margin: 0;
+    color: var(--text-colour);
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+#topDiv {
+	display: inline-flex;
+	margin: auto;
+	background-color: var(--g-colour-2);
+	width: 100%;
+	height: 20vh;
+}
+
+#titleImgDiv {
+	width: 40vw;
+}
+
+#mainDiv {
+	background-image: linear-gradient(to bottom right, var(--g-colour-1), var(--g-colour-2));
+    height: 100%;
+}
+
+#msgDiv {
+	height: 80vh;
+	text-align: center;
+}
+
+#bottomDiv {
+	background-color: var(--g-colour-1);
+    width: 100%;
+	min-height: 5vh;
+	margin: auto;
+	position: absolute;
+    display: inline;
+}
+
+#righty {
+	height: inherit;
+	vertical-align: middle;
+	font-size: 24px;
+	float: right;
+}
+
+.outerDiv {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 50vw;
+	color: var(--text-xolour);
+	justify-content: center;
+}
+
+.innerDiv {
+	font-size: 64px;
+	color: var(--text-colour);
+	text-shadow: 2px 2px var(--shadow-colour);
+	margin: auto;
+}
+
+.image {
+	outline: var(--cadetblue) solid 2px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.image:hover {
+	transition: 1s;
+	outline: var(--cadetblue) solid 2px;
+}
+
+.image:active {
+	transition: 0.2s;
+	outline: var(--indianred) solid 3px;
+}
+
+.buttonForm {
+	margin: auto;
+}
+
+.theme {
+	position: absolute;
+	font-size: 16px;
+}
+
+.frameDiv {
+	margin: auto;
+}
+
+button {
+	color: var(--text-colour);
+	text-shadow: 2px 2px var(--shadow-colour);
+	border-radius: 8px;
+	font-size: 32px;
+	background: none;
+	border-top: 8px solid var(--border-colour-2);
+	border-left: 8px solid var(--border-colour-2);
+	border-bottom: 8px solid var(--border-colour-1);
+	border-right: 8px solid var(--border-colour-1);
+	padding: 5px 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+button:hover {
+	transition: 1s;
+	background-color: var(--cadetblue);
+}
+
+button:active {
+	transition: 0.2s;
+	background-color: var(--indianred);
+	border-top: 8px solid var(--border-colour-1);
+	border-left: 8px solid var(--border-colour-1);
+	border-bottom: 8px solid var(--border-colour-2);
+	border-right: 8px solid var(--border-colour-2);
+}
+
+.iframe {
+	margin: auto;
+}

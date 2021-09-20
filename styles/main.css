@@ -1,0 +1,64 @@
+:root {
+	--g-colour-1: royalblue;
+	--g-colour-2: firebrick;
+	--text-colour: lavender;
+	--shadow-colour: black;
+	--cadetblue: cadetblue;
+	--indianred: indianred;
+	--lightblue: lightblue;
+	--none: none;
+	--content-bg: rgba(0, 0, 0, 0.25);
+	--label-bg: rgba(0, 0, 0, 0.5);
+	--label-bg-hover: rgba(50, 50, 50, 0.35);
+	--label-bg-click: rgba(100, 100, 100, 0.25);
+	--border-color-1: maroon;
+	--border-color-2: steelblue;
+}
+.fairyfloss {
+	--g-colour-1: royalblue;
+	--g-colour-2: firebrick;
+	--text-colour: lavender;
+	--shadow-colour: black;
+	--cadetblue: cadetblue;
+	--indianred: indianred;
+	--lightblue: lightblue;
+	--none: none;
+	--content-bg: rgba(0, 0, 0, 0.25);
+	--label-bg: rgba(0, 0, 0, 0.5);
+	--label-bg-hover: rgba(50, 50, 50, 0.35);
+	--label-bg-click: rgba(100, 100, 100, 0.25);
+	--border-colour-1: maroon;
+	--border-colour-2: steelblue;
+}
+.dark {
+	--g-colour-1: #000022;
+	--g-colour-2: #000011;
+	--text-colour: white;
+	--shadow-colour: dimgray;
+	--cadetblue: cadetblue;
+	--indianred: indianred;
+	--lightblue: lightblue;
+	--none: none;
+	--content-bg: rgba(0, 0, 0, 0.25);
+	--label-bg: rgba(0, 0, 0, 0.5);
+	--label-bg-hover: rgba(50, 50, 50, 0.35);
+	--label-bg-click: rgba(100, 100, 100, 0.25);
+	--border-colour-1: maroon;
+	--border-colour-2: steelblue;
+}
+.matrix {
+	--g-colour-1: black;
+	--g-colour-2: black;
+	--text-colour: Chartreuse;
+	--shadow-colour: null;
+	--cadetblue: Chartreuse;
+	--indianred: black;
+	--lightblue: Chartreuse;
+	--none: black;
+	--content-bg: rgba(0, 0, 0, 0.25);
+	--label-bg: rgba(0, 0, 0, 0.5);
+	--label-bg-hover: rgba(50, 50, 50, 0.35);
+	--label-bg-click: rgba(100, 100, 100, 0.25);
+	--border-colour-1: maroon;
+	--border-colour-2: steelblue;
+}
