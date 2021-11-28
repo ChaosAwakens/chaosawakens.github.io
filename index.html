@@ -13,21 +13,43 @@
 </head>
 <body>
 <div id="mainDiv">
-	<div id="topDiv">
+	<div id="topDiv1">
+		<form class="buttonForm" action="#whyExistDiv">
+			<button>What is this Mod?</button>
+		</form>
 		<form class="buttonForm" action="#downloadsDiv">
 			<button>Downloads</button>
-		</form>
-		<form class="buttonForm" action="#discordDiv">
-			<button>Discord</button>
 		</form>
 		<div id="titleImgDiv">
 			<img src="resources/images/title.png" alt="Chaos Awakens Logo">
 		</div>
-		<form class="buttonForm" action="#addonDiv">
-			<button>Add-ons</button>
-		</form>
 		<form class="buttonForm" action="https://github.com/ChaosAwakens/ChaosAwakens">
-			<button>Github</button>
+			<button>Mod Github</button>
+		</form>
+		<form class="buttonForm" action="https://github.com/ChaosAwakens/chaosawakens.github.io">
+			<button>Website Github</button>
+		</form>
+	</div>
+	<div id="topDiv2">
+		<form class="buttonForm" action="#discordDiv">
+			<button>Our Discord</button>
+		</form>
+		<form class="buttonForm" action="#addonDiv">
+			<button>Addons Discord</button>
+		</form>
+		<form class="buttonForm" action="#developersDiv">
+			<button>Developers</button>
+		</form>
+		<form class="buttonForm">
+			<div class="theme">
+				Choose Your Theme?<br>
+				<label for="theme-selector"></label>
+				<select id="theme-selector">
+					<option value="fairyfloss">Fairy Floss</option>
+					<option value="dark">Dark</option>
+					<option value="matrix">Matrix</option>
+				</select>
+			</div>
 		</form>
 	</div>
 	<br>
@@ -49,9 +71,15 @@
 			You can join the discord for Chaos Awakens and Addons.
 		</h1>
 	</div>
-	<br>
+	<div id="whyExistDiv">
+		<div class="headerMainText" style="font-size:64px">
+			<b>Why does Chaos Awakens Exist?</b>
+		</div>
+		<p style="font-size:24px"> The Chaos Awakens project was created after the 1.12.2 Orespawn update was cancelled. The staff of the DangerZone Modding Discord decided to start their own version of the mod and found some people wanting to help. These people were some extremely talented Coders, Modelers, Texturers and more.</p>
+		<br>
+	</div>
 	<div id="downloadsDiv">
-		<div class="downloadsANDchangelogMainText" style="font-size:64px">
+		<div class="headerMainText" style="font-size:64px">
 			<b>Downloads</b>
 		</div>
 		<br>
@@ -247,7 +275,7 @@
 					- Added Instant Survival Shelter. <br>
 					- Added Extra Small Zoo Cage, Small Zoo Cage, Medium Zoo Cage, Large Zoo Cage and Extra Large Zoo Cage. <br>
 					- Added Robo Warrior, Enchanted Golden Apple Cow and Crystal Apple Cow. <br>
-					- Ant Nests and Termite Nests now have Biome Dependent colouring. <br>
+					- Ant Nests and Termite Nests now have Biome Dependent coloring. <br>
 					- Item and Food Creative Tabs are now separate. <br>
 					- Removed Ent Dungeon Wood.
 				</p>
@@ -423,7 +451,7 @@
                     <a href="https://discord.gg/TmVqnT5Zmj">
                         <img class="image" src="https://cdn.discordapp.com/icons/790637112546033665/a_e29d560fdff6fa75719262ca53d37538.gif?size=128" alt="Chaos Awakens Discord Icon.">
                         <br>
-                        Discord
+                        Chaos Awakens Discord
                     </a>
 
                 </div>
@@ -436,7 +464,7 @@
                     <a href="https://discord.gg/Y26jmyPC7v">
                         <img class="image" src="https://media.discordapp.net/attachments/849030904751587330/875404731164553316/chaos_addons_logogold.png?width=128&height=128" alt="Chaos Awakens Addons Page Icon.">
                         <br>
-                        Add-ons Discord
+                        Addons Discord
                     </a>
 
                 </div>
@@ -447,68 +475,24 @@
         </div>
 	<br>
 	<br>
-
-	<div id="bottomDiv">
-		<div class="theme">
-			Choose your theme:
-			<label for="theme-selector"></label>
-			<select id="theme-selector">
-				<option value="fairyfloss">Fairy Floss</option>
-				<option value="dark">Dark</option>
-				<option value="matrix">Matrix</option>
-			</select>
+	<div id="developersDiv">
+		<div class="headerMainText" style="font-size:64px">
+			<b>Our Developers</b>
 		</div>
-		<div id="righty">
-			<a href="https://github.com/ChaosAwakens/chaosawakens.github.io">Website Github</a>
-		</div>
+		<p style="font-size:24px">Our Current Development Team is:</p>
+		<p style="font-size:18px">
+		<strong>Project Lead:</strong> WeirdNerd<br><br>
+		<strong>Texturers:</strong> Absolute Kun, BS Guy, ChromaticAeternus, DracoTyoshi, Franz Drameh, Memer Teamer, Pear, Phobos, Renato, Santispik3, Technocreeper, TheLoneCyberman, thesleepingdevil, VDA Spoop, Xahaan, 𝒯𝟦☯𝓃𝑒™<br><br>
+		<strong>Modellers:</strong> Absolute Kun, ChromaticAeternus, DinoDave, Memer Teamer, Phobos, Renato, TheLoneCyberman, 𝒯𝟦☯𝓃𝑒™<br><br>
+		<strong>Sound Designers:</strong> mattster, WeirdNerd<br><br>
+		<strong>Coders:</strong> Blackout, HugoMage, Meme Man, WeirdNerd<br><br>
+		<strong>Builders:</strong> Blackout, Meme Man, TheLoneCyberman, thesleepingdevil</p>
+		<br>
 	</div>
 </div>
 
 </body>
 <style>
-	.info {
-		color: var(--text-colour);
-		text-shadow: 2px 2px var(--shadow-colour);
-	}
-
-	p {
-		font-size: 20px;
-	}
-
-	a {
-		color: lightblue;
-	}
-
-	a:hover {
-		color: darkcyan;
-	}
-
-	a:active {
-		color: var(--g-colour-2);
-	}
-
-	select {
-		color: var(--text-colour);
-		text-shadow: 2px 2px var(--shadow-colour);
-		border-radius: 8px;
-		font-size: 16px;
-		background: var(--none);
-		border-color: var(--cadetblue);
-		padding: 5px 20px;
-		margin-right: 20px;
-		margin-left: 20px;
-	}
-
-	select:hover {
-		transition: 0s;
-		background-color: black;
-	}
-
-	select:active {
-		transition: 0.2s;
-		background-color: var(--none);
-		border-color: var(--indianred);
-	}
 </style>
 <script>
 	window.onload = function() {

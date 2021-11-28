@@ -7,15 +7,6 @@ div#downloadsDiv {
 	font-size: 32px;
 }
 
-div.downloadsANDchangelogMainText {
-	color: var(--text-colour);
-	text-shadow: 2px 2px var(--shadow-colour);
-}
-.mainText {
-	color: var(--text-colour);
-	text-shadow: 2px 2px var(--shadow-colour);
-}
-
 .collapse {
 	display: none;
 }
