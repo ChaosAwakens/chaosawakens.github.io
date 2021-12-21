@@ -187,3 +187,10 @@ select:active {
 	border-color: var(--theme-border-color-3);
 	background: var(--theme-color-3);
 }
+
+.error {
+    border-style: solid;
+    border-color: black;
+    color: red;
+    background-color: rgb(233, 230, 230);
+  }
