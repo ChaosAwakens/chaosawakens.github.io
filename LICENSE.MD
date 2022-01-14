@@ -1,5 +1,5 @@
-Website code is under MIT LICENSE
-website is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Website code is under MIT LICENSE
+- Website is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 MIT License
 
