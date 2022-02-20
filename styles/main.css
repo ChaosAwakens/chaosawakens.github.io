@@ -83,7 +83,7 @@
 	--text-color: chartreuse;
 	--text-color-dark: chartreuse;
 	--a-text-color-1: rgb(127, 255, 0);
-	--a-text-color-2: rgb(114,229, 0);
+	--a-text-color-2: rgb(114, 229, 0);
 	--a-text-color-3: rgb(101, 204, 0);
 	--shadow-color: null;
 	--shadow-color-light: null;
@@ -99,6 +99,32 @@
 	--theme-color-2: rgb(0, 0, 0);
 	--theme-color-3: rgb(0, 0, 0);
 	--theme-border-color-1: rgb(127, 255, 0);
-	--theme-border-color-2: rgb(114,229, 0);
+	--theme-border-color-2: rgb(114, 229, 0);
 	--theme-border-color-3: rgb(101, 204, 0);
+}
+.eyeburner {
+	--g-color-1: white;
+	--g-color-2: white;
+	--header-background-color: white;
+	--text-color: black;
+	--text-color-dark: black;
+	--a-text-color-1: black;
+	--a-text-color-2: black;
+	--a-text-color-3: black;
+	--shadow-color: null;
+	--shadow-color-light: null;
+	--outline-color-1: black;
+	--outline-color-2: black;
+	--content-bg: white;
+	--label-bg: white;
+	--label-bg-hover: white;
+	--label-bg-click: white;
+	--border-color-1: black;
+	--border-color-2: black;
+	--theme-color-1: white;
+	--theme-color-2: white;
+	--theme-color-3: white;
+	--theme-border-color-1: black;
+	--theme-border-color-2: black;
+	--theme-border-color-3: black;
 }
