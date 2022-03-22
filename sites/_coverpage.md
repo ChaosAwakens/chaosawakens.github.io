@@ -10,4 +10,4 @@
 [Wiki](https://github.com/ChaosAwakens/ChaosAwakens)
 [Home](README.md)
 [FAQ](faq.md)
-[Download](https://github.com/ChaosAwakens/chaosawakens.github.io/tree/main/resources/versions)
+[Download](download.md)

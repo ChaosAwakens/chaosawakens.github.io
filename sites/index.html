@@ -17,6 +17,10 @@
   :root {
     /* Change the theme color hue */
     --theme-hue: 325;
+    /* Change the link color */
+    --link-color: #DA0B84;
+    --link-color--hover: #6d063e;
+    --link-text-decoration-color: #DA0B84;
   }
 </style>
     <!--Script to customize docsify,
@@ -29,6 +33,8 @@
       loadSidebar: true,
       executeScript: true,
       auto2top: true,
+      maxLevel: 4,
+      subMaxLevel: 2,
       repo: 'https://github.com/ChaosAwakens/ChaosAwakens',
       name: 'Chaos Awakens',
 
@@ -39,7 +45,7 @@
             ].join('');
           var footer = [
             '<footer style="text-align: center;margin-top: 50px;">',
-            '<span>Powered by <a href="https://docsify.js.org/">docsify</a></span>',
+            '<span>Powered by <a href="https://docsify.js.org/"><b>docsify</b></a></span>',
             '</footer>'
           ].join('');
           hook.afterEach(function(html) {
@@ -54,7 +60,7 @@
     }
 </script>
     <!--Loads the docsify and docsify-themeable script-->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 </body>
 </html>

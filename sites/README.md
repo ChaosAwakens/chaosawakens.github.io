@@ -14,8 +14,11 @@ Check the Release page to download a version of the mod.
 
 ## Community
 
-
 Users and the development team are usually in the [**Discord**]().
+
+<iframe src="https://discord.com/widget?id=790637112546033665&theme=dark" width="350" height="500"
+allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox
+allow-same-origin allow-scripts"></iframe>
 
 ## Developers
 
