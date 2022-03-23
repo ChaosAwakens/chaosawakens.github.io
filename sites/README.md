@@ -13,13 +13,14 @@ mod to function!
 > Note as this mod's gear can surpass vanilla attribute limits,
 > [**AttributeFix**](https://www.curseforge.com/minecraft/mc-mods/attributefix/files) is also recommended.
 
-Check the Release page to download a version of the mod.
+Check the [download page](download.md) to download a version of the mod.
 
 ## Community
 
 Users and the development team are usually in the [**Discord**](https://discord.gg/TmVqnT5Zmj).
 
-<iframe src="https://discord.com/widget?id=790637112546033665&theme=dark" width="350" height="500"
+<iframe src="https://discord.com/widget?id=790637112546033665&theme=dark" style="width:100%"
+height="350"
 allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox
 allow-same-origin allow-scripts"></iframe>
 
