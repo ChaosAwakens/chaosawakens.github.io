@@ -5,7 +5,9 @@ Changelog file could be embeded here in the page as a seperate page
 It might be easier to make tags on Github and publish releases on Github... Then you would only need to link them here!)
 
 ## Latest
-!> [**GeckoLib**](https://www.curseforge.com/minecraft/mc-mods/geckolib/files) is required for this mod to function!
+
+!> [**GeckoLib**](https://www.curseforge.com/minecraft/mc-mods/geckolib/files) is required for this
+mod to function!
 > Note as this mod's gear can surpass vanilla attribute limits,
 > [**AttributeFix**](https://www.curseforge.com/minecraft/mc-mods/attributefix/files) is also recommended.
 
@@ -24,12 +26,13 @@ PATCH:
   vanilla recipes that use them like sticks.
 - Apple Cows can now sometimes spawn with a new fancy texture! Happy Halloween! 
 ```
+
 </p>
 </details>
 
 ## Archived
 
-[chaosawakens-1.16.5-0.9.0.2.jar](../resources/versions/chaosawakens-1.16.5-0.9.0.2.jar) 
+[chaosawakens-1.16.5-0.9.0.2.jar](../resources/versions/chaosawakens-1.16.5-0.9.0.2.jar)
 <details><summary>Click for changelog</summary>
 <p>
 
@@ -42,6 +45,7 @@ PATCH:
 - Fixed not being able to start servers with the mod installed.
 - Read 0.9.0.0 and 0.9.0.1 changelogs.
 ```
+
 </p>
 </details>
 
@@ -55,6 +59,7 @@ PATCH:
 - Fixed hercules beetle and stink bug animations.
 - Read 0.9.0.0 changelog.
 ```
+
 </p>
 </details>
 
@@ -102,6 +107,7 @@ PATCH:
 - Some nice updated textures!
 - And a lot more! 
 ```
+
 </p>
 </details>
 
@@ -112,6 +118,7 @@ PATCH:
 ```changelog
 - Added Random Teleport Block.
 ```
+
 </p>
 </details>
 
@@ -122,6 +129,7 @@ PATCH:
 ```changelog
  - Added Extreme Torch.
 ```
+
 </p>
 </details>
 
@@ -132,6 +140,7 @@ PATCH:
 ```changelog
 UNKNOWN CHANGES
 ```
+
 </p>
 </details>
 
@@ -181,6 +190,7 @@ UNKNOWN CHANGES
 - Item and Food Creative Tabs are now separate.
 - Removed Ent Dungeon Wood.
 ```
+
 </p>
 </details>
 
@@ -191,6 +201,7 @@ UNKNOWN CHANGES
 ```changelog
 UNKNOWN CHANGES
 ```
+
 </p>
 </details>
 
@@ -220,6 +231,7 @@ UNKNOWN CHANGES
 - Updated Lava Eel Helmet, Chestplate, Leggings and Boots Textures.
 - Updated Lapis Lazuli Helmet, Chestplate, Leggings and Boots Textures. 
 ```
+
 </p>
 </details>
 
@@ -232,6 +244,7 @@ UNKNOWN CHANGES
 - Added Experience Helmet, Chestplate, Leggings and Boots Textures.
 - Added Auto Enchants to Ultimate Set and Emerald Pickaxe.
 ```
+
 </p>
 </details>
 
@@ -249,6 +262,7 @@ UNKNOWN CHANGES
 - Updated Tigers Eye Helmet, Chestplate, Leggings and Boots Textures.
 - Updated Tigers Eye Texture. 
 ```
+
 </p>
 </details>
 
@@ -259,7 +273,6 @@ UNKNOWN CHANGES
 [ChaosAwakensBeta1.16.5v0.2.jar](../resources/versions/chaosawakens-1.16.5-0.9.0.2.jar)
 
 [ChaosAwakensBeta1.16.5v0.1.jar](../resources/versions/chaosawakens-1.16.5-0.9.0.2.jar)
-
 
 [ChaosAwakensAlpha1.16.5v0.4.jar](../resources/versions/chaosawakens-1.16.5-0.9.0.2.jar)
 <details><summary>Click for changelog</summary>
@@ -278,6 +291,7 @@ UNKNOWN CHANGES
 - Added Tigers Eye Texture.
 - Fixed Titanium, Uranium and Aluminium not having Ingot in their names.
 ```
+
 </p>
 </details>
 
@@ -298,6 +312,7 @@ UNKNOWN CHANGES
 - Updated Emerald Sword, Pickaxe, Shovel, Axe and Hoe Textures.
 - Updated Emerald Helmet, Chestplate, Leggings and Boots Textures. 
 ```
+
 </p>
 </details>
 
@@ -315,6 +330,7 @@ UNKNOWN CHANGES
 - Added Untextured Tigers Eye Sword, Pickaxe, Shovel, Axe and Hoe.
 - Added Untextured Tigers Eye Helmet, Chestplate, Leggings and Boots.
 ```
+
 </p>
 </details>
 
@@ -329,5 +345,6 @@ UNKNOWN CHANGES
 - Added Untextured Tigers Eye, Titanium, Titanium Nugget, Uranium, Uranium Nugget and Aluminium.
 - Added Untextured Ruby Block, Tigers Eye Block, Titanium Block, Uranium Block, Aluminium Block.
 ```
+
 </p>
 </details>

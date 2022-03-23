@@ -6,7 +6,7 @@
 
 > A Spiritual Successor of Orespawn.
 
->![GitHub license](https://img.shields.io/github/license/ChaosAwakens/ChaosAwakens.svg)
+> ![GitHub license](https://img.shields.io/github/license/ChaosAwakens/ChaosAwakens.svg)
 ![GitHub issues](https://img.shields.io/github/issues/ChaosAwakens/ChaosAwakens.svg)
 [![GitHub tag](https://img.shields.io/github/tag/ChaosAwakens/ChaosAwakens?color=3271a8)](https://github.com/ChaosAwakens/ChaosAwakens/tags/)
 
