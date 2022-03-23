@@ -1,10 +1,11 @@
 <!-- _sidebar.md -->
 
-- [Home](/)
-- [FAQ](faq.md)
-- [Changelog]()
+- [Home]()
 - [Download](download.md)
-- [Wiki](https://github.com/ChaosAwakens/ChaosAwakens)
+- [News](news.md)
+- [FAQ](faq.md)
+- [Wiki]()
+- [Changelog]()
 - **Links**
 - [![](../resources/images/github.svg) Github](https://github.com/ChaosAwakens/ChaosAwakens)
 - [![](../resources/images/discord.png ':size=25') Discord](https://github.com/ChaosAwakens/ChaosAwakens)
