@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: ../html/addons.html
+Disallow: ../html/changelog.html
+Disallow: ../html/downloads.html
+Disallow: ../html/orespawn.html
+
+Disallow: /README.md
+Disallow /LICENSE.txt
