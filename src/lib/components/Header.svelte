@@ -4,7 +4,9 @@
 </script>
 
 <header>
-    <img src={img} alt='ChaosAwakens logo'/>
+    <a href="/">
+        <img src={img} alt='ChaosAwakens logo'/>
+    </a>
     <Nav items=
         {
             [
@@ -17,7 +19,7 @@
                     name: "About",
                 },
                 {
-                    link: "/discord",
+                    link: "https://discord.com/invite/WHXZrBEs",
                     name: "Discord",
                     target: "_blank"
                 },

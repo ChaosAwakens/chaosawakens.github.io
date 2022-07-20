@@ -3,8 +3,11 @@
 
 body {
     margin: 0;
-    background-image: linear-gradient(to left, rgba(255,255,255,0) 10%,
-              rgb(0, 0, 0)), url('images/background.jpg');
+    background: linear-gradient(to left, rgba(255,255,255,0) 10%,
+              rgb(0, 0, 0)), url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 h1 {

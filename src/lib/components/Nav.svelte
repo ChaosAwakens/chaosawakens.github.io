@@ -23,6 +23,7 @@
 
     a:hover {
         color: white;
+        transform: translateY(-5px);
     }
 
     nav {
