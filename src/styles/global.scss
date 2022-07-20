@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap');
+@import './vars.scss';
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to left, rgba(255,255,255,0) 10%,
+              rgb(0, 0, 0)), url('images/background.jpg');
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 255, 255);
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
