@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Montserrat&family=Press+Start+2P&display=swap');
 @import './vars.scss';
+
+html {
+    overflow-y: scroll;
+}
 
 body {
     margin: 0;
@@ -7,7 +11,6 @@ body {
               rgb(0, 0, 0)), url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
 }
 
 h1 {
