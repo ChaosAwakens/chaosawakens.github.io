@@ -3,5 +3,5 @@
 </script>
 
 <svelte:head>
-    <title>{title} | ChaosAwakens</title>
+    <title>{title} | Chaos Awakens</title>
 </svelte:head>

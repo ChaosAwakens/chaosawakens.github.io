@@ -8,17 +8,21 @@ html {
 body {
     margin: 0;
     background: linear-gradient(to left, rgba(255,255,255,0) 10%,
-              rgb(0, 0, 0)), url('images/background.jpg') no-repeat center center fixed;
+              rgb(0, 0, 0)), url('/images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100%;
 }
 
-h1 {
-    font-family: 'Press Start 2P', cursive;
+h1, h2, h3, h4 {
+    font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(255, 255, 255);
 }
 
 p, a {
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
+}
+
+.content {
+    margin: 5vw;
 }

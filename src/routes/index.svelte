@@ -11,7 +11,7 @@
 </div>
 
 <style lang="scss">
-    .content {
-        margin: 5vw;
+    h1 {
+        font-family: 'Press Start 2P', cursive;
     }
 </style>
