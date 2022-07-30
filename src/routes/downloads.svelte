@@ -86,7 +86,7 @@
 					- Apple Cows can now sometimes spawn with a new fancy texture! Happy Halloween!`
         },
         {
-            version: '0.9.0.4',
+            version: '0.9.0.4 (April Fools Update)',
             mcVersion: '1.16.5',
             branch: 'stable',
             changelog: `
@@ -311,7 +311,7 @@
             version: '0.10.0.2',
             mcVersion: '1.16.5',
             branch: 'stable',
-            changelog: `				
+            changelog: `
             - Fixed Critter Cage Default Filled Texture. <br>
 			- Reverted the Uranium Texture to the old better one. <br>
 			- Fixed a crash on servers with the extended reach tools.`
@@ -522,7 +522,7 @@
 
     downloads.sort(compare);
     downloads.sort((a,b) => (a.branch > b.branch) ? 1 : ((b.branch > a.branch) ? -1 : 0)).reverse();
-    
+
 </script>
 
 <Title title='Downloads'/>
