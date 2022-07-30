@@ -1,0 +1,368 @@
+import{S as yt,i as Tt,s as St,x as Rt,a as me,l as F,u as O,y as Ct,c as be,m as _,p as D,v as P,h as k,q as U,z as $t,b as q,G as C,f as It,t as xt,C as kt,F as Lt,n as Ne}from"../chunks/index-83fb3bf0.js";import{T as Nt}from"../chunks/Title-c986be92.js";var z={exports:{}};const Ot="2.0.0",Pt=256,Bt=Number.MAX_SAFE_INTEGER||9007199254740991,Gt=16;var ge={SEMVER_SPEC_VERSION:Ot,MAX_LENGTH:Pt,MAX_SAFE_INTEGER:Bt,MAX_SAFE_COMPONENT_LENGTH:Gt};const Ft=typeof process=="object"&&process.env&&process.env.NODE_DEBUG&&/\bsemver\b/i.test(process.env.NODE_DEBUG)?(...r)=>console.error("SEMVER",...r):()=>{};var Ae=Ft;(function(r,e){const{MAX_SAFE_COMPONENT_LENGTH:t}=ge,n=Ae;e=r.exports={};const a=e.re=[],s=e.src=[],i=e.t={};let c=0;const o=(A,l,d)=>{const v=c++;n(A,v,l),i[A]=v,s[v]=l,a[v]=new RegExp(l,d?"g":void 0)};o("NUMERICIDENTIFIER","0|[1-9]\\d*"),o("NUMERICIDENTIFIERLOOSE","[0-9]+"),o("NONNUMERICIDENTIFIER","\\d*[a-zA-Z-][a-zA-Z0-9-]*"),o("MAINVERSION",`(${s[i.NUMERICIDENTIFIER]})\\.(${s[i.NUMERICIDENTIFIER]})\\.(${s[i.NUMERICIDENTIFIER]})`),o("MAINVERSIONLOOSE",`(${s[i.NUMERICIDENTIFIERLOOSE]})\\.(${s[i.NUMERICIDENTIFIERLOOSE]})\\.(${s[i.NUMERICIDENTIFIERLOOSE]})`),o("PRERELEASEIDENTIFIER",`(?:${s[i.NUMERICIDENTIFIER]}|${s[i.NONNUMERICIDENTIFIER]})`),o("PRERELEASEIDENTIFIERLOOSE",`(?:${s[i.NUMERICIDENTIFIERLOOSE]}|${s[i.NONNUMERICIDENTIFIER]})`),o("PRERELEASE",`(?:-(${s[i.PRERELEASEIDENTIFIER]}(?:\\.${s[i.PRERELEASEIDENTIFIER]})*))`),o("PRERELEASELOOSE",`(?:-?(${s[i.PRERELEASEIDENTIFIERLOOSE]}(?:\\.${s[i.PRERELEASEIDENTIFIERLOOSE]})*))`),o("BUILDIDENTIFIER","[0-9A-Za-z-]+"),o("BUILD",`(?:\\+(${s[i.BUILDIDENTIFIER]}(?:\\.${s[i.BUILDIDENTIFIER]})*))`),o("FULLPLAIN",`v?${s[i.MAINVERSION]}${s[i.PRERELEASE]}?${s[i.BUILD]}?`),o("FULL",`^${s[i.FULLPLAIN]}$`),o("LOOSEPLAIN",`[v=\\s]*${s[i.MAINVERSIONLOOSE]}${s[i.PRERELEASELOOSE]}?${s[i.BUILD]}?`),o("LOOSE",`^${s[i.LOOSEPLAIN]}$`),o("GTLT","((?:<|>)?=?)"),o("XRANGEIDENTIFIERLOOSE",`${s[i.NUMERICIDENTIFIERLOOSE]}|x|X|\\*`),o("XRANGEIDENTIFIER",`${s[i.NUMERICIDENTIFIER]}|x|X|\\*`),o("XRANGEPLAIN",`[v=\\s]*(${s[i.XRANGEIDENTIFIER]})(?:\\.(${s[i.XRANGEIDENTIFIER]})(?:\\.(${s[i.XRANGEIDENTIFIER]})(?:${s[i.PRERELEASE]})?${s[i.BUILD]}?)?)?`),o("XRANGEPLAINLOOSE",`[v=\\s]*(${s[i.XRANGEIDENTIFIERLOOSE]})(?:\\.(${s[i.XRANGEIDENTIFIERLOOSE]})(?:\\.(${s[i.XRANGEIDENTIFIERLOOSE]})(?:${s[i.PRERELEASELOOSE]})?${s[i.BUILD]}?)?)?`),o("XRANGE",`^${s[i.GTLT]}\\s*${s[i.XRANGEPLAIN]}$`),o("XRANGELOOSE",`^${s[i.GTLT]}\\s*${s[i.XRANGEPLAINLOOSE]}$`),o("COERCE",`(^|[^\\d])(\\d{1,${t}})(?:\\.(\\d{1,${t}}))?(?:\\.(\\d{1,${t}}))?(?:$|[^\\d])`),o("COERCERTL",s[i.COERCE],!0),o("LONETILDE","(?:~>?)"),o("TILDETRIM",`(\\s*)${s[i.LONETILDE]}\\s+`,!0),e.tildeTrimReplace="$1~",o("TILDE",`^${s[i.LONETILDE]}${s[i.XRANGEPLAIN]}$`),o("TILDELOOSE",`^${s[i.LONETILDE]}${s[i.XRANGEPLAINLOOSE]}$`),o("LONECARET","(?:\\^)"),o("CARETTRIM",`(\\s*)${s[i.LONECARET]}\\s+`,!0),e.caretTrimReplace="$1^",o("CARET",`^${s[i.LONECARET]}${s[i.XRANGEPLAIN]}$`),o("CARETLOOSE",`^${s[i.LONECARET]}${s[i.XRANGEPLAINLOOSE]}$`),o("COMPARATORLOOSE",`^${s[i.GTLT]}\\s*(${s[i.LOOSEPLAIN]})$|^$`),o("COMPARATOR",`^${s[i.GTLT]}\\s*(${s[i.FULLPLAIN]})$|^$`),o("COMPARATORTRIM",`(\\s*)${s[i.GTLT]}\\s*(${s[i.LOOSEPLAIN]}|${s[i.XRANGEPLAIN]})`,!0),e.comparatorTrimReplace="$1$2$3",o("HYPHENRANGE",`^\\s*(${s[i.XRANGEPLAIN]})\\s+-\\s+(${s[i.XRANGEPLAIN]})\\s*$`),o("HYPHENRANGELOOSE",`^\\s*(${s[i.XRANGEPLAINLOOSE]})\\s+-\\s+(${s[i.XRANGEPLAINLOOSE]})\\s*$`),o("STAR","(<|>)?=?\\s*\\*"),o("GTE0","^\\s*>=\\s*0\\.0\\.0\\s*$"),o("GTE0PRE","^\\s*>=\\s*0\\.0\\.0-0\\s*$")})(z,z.exports);const _t=["includePrerelease","loose","rtl"],Dt=r=>r?typeof r!="object"?{loose:!0}:_t.filter(e=>r[e]).reduce((e,t)=>(e[t]=!0,e),{}):{};var ve=Dt;const Ue=/^[0-9]+$/,ct=(r,e)=>{const t=Ue.test(r),n=Ue.test(e);return t&&n&&(r=+r,e=+e),r===e?0:t&&!n?-1:n&&!t?1:r<e?-1:1},Ut=(r,e)=>ct(e,r);var Le={compareIdentifiers:ct,rcompareIdentifiers:Ut};const de=Ae,{MAX_LENGTH:He,MAX_SAFE_INTEGER:he}=ge,{re:Ve,t:je}=z.exports,Ht=ve,{compareIdentifiers:Q}=Le;class H{constructor(e,t){if(t=Ht(t),e instanceof H){if(e.loose===!!t.loose&&e.includePrerelease===!!t.includePrerelease)return e;e=e.version}else if(typeof e!="string")throw new TypeError(`Invalid Version: ${e}`);if(e.length>He)throw new TypeError(`version is longer than ${He} characters`);de("SemVer",e,t),this.options=t,this.loose=!!t.loose,this.includePrerelease=!!t.includePrerelease;const n=e.trim().match(t.loose?Ve[je.LOOSE]:Ve[je.FULL]);if(!n)throw new TypeError(`Invalid Version: ${e}`);if(this.raw=e,this.major=+n[1],this.minor=+n[2],this.patch=+n[3],this.major>he||this.major<0)throw new TypeError("Invalid major version");if(this.minor>he||this.minor<0)throw new TypeError("Invalid minor version");if(this.patch>he||this.patch<0)throw new TypeError("Invalid patch version");n[4]?this.prerelease=n[4].split(".").map(a=>{if(/^[0-9]+$/.test(a)){const s=+a;if(s>=0&&s<he)return s}return a}):this.prerelease=[],this.build=n[5]?n[5].split("."):[],this.format()}format(){return this.version=`${this.major}.${this.minor}.${this.patch}`,this.prerelease.length&&(this.version+=`-${this.prerelease.join(".")}`),this.version}toString(){return this.version}compare(e){if(de("SemVer.compare",this.version,this.options,e),!(e instanceof H)){if(typeof e=="string"&&e===this.version)return 0;e=new H(e,this.options)}return e.version===this.version?0:this.compareMain(e)||this.comparePre(e)}compareMain(e){return e instanceof H||(e=new H(e,this.options)),Q(this.major,e.major)||Q(this.minor,e.minor)||Q(this.patch,e.patch)}comparePre(e){if(e instanceof H||(e=new H(e,this.options)),this.prerelease.length&&!e.prerelease.length)return-1;if(!this.prerelease.length&&e.prerelease.length)return 1;if(!this.prerelease.length&&!e.prerelease.length)return 0;let t=0;do{const n=this.prerelease[t],a=e.prerelease[t];if(de("prerelease compare",t,n,a),n===void 0&&a===void 0)return 0;if(a===void 0)return 1;if(n===void 0)return-1;if(n===a)continue;return Q(n,a)}while(++t)}compareBuild(e){e instanceof H||(e=new H(e,this.options));let t=0;do{const n=this.build[t],a=e.build[t];if(de("prerelease compare",t,n,a),n===void 0&&a===void 0)return 0;if(a===void 0)return 1;if(n===void 0)return-1;if(n===a)continue;return Q(n,a)}while(++t)}inc(e,t){switch(e){case"premajor":this.prerelease.length=0,this.patch=0,this.minor=0,this.major++,this.inc("pre",t);break;case"preminor":this.prerelease.length=0,this.patch=0,this.minor++,this.inc("pre",t);break;case"prepatch":this.prerelease.length=0,this.inc("patch",t),this.inc("pre",t);break;case"prerelease":this.prerelease.length===0&&this.inc("patch",t),this.inc("pre",t);break;case"major":(this.minor!==0||this.patch!==0||this.prerelease.length===0)&&this.major++,this.minor=0,this.patch=0,this.prerelease=[];break;case"minor":(this.patch!==0||this.prerelease.length===0)&&this.minor++,this.patch=0,this.prerelease=[];break;case"patch":this.prerelease.length===0&&this.patch++,this.prerelease=[];break;case"pre":if(this.prerelease.length===0)this.prerelease=[0];else{let n=this.prerelease.length;for(;--n>=0;)typeof this.prerelease[n]=="number"&&(this.prerelease[n]++,n=-2);n===-1&&this.prerelease.push(0)}t&&(Q(this.prerelease[0],t)===0?isNaN(this.prerelease[1])&&(this.prerelease=[t,0]):this.prerelease=[t,0]);break;default:throw new Error(`invalid increment argument: ${e}`)}return this.format(),this.raw=this.version,this}}var B=H;const{MAX_LENGTH:Vt}=ge,{re:Me,t:Xe}=z.exports,We=B,jt=ve,Mt=(r,e)=>{if(e=jt(e),r instanceof We)return r;if(typeof r!="string"||r.length>Vt||!(e.loose?Me[Xe.LOOSE]:Me[Xe.FULL]).test(r))return null;try{return new We(r,e)}catch{return null}};var re=Mt;const Xt=re,Wt=(r,e)=>{const t=Xt(r,e);return t?t.version:null};var qt=Wt;const zt=re,Yt=(r,e)=>{const t=zt(r.trim().replace(/^[=v]+/,""),e);return t?t.version:null};var Jt=Yt;const qe=B,Zt=(r,e,t,n)=>{typeof t=="string"&&(n=t,t=void 0);try{return new qe(r instanceof qe?r.version:r,t).inc(e,n).version}catch{return null}};var Kt=Zt;const ze=B,Qt=(r,e,t)=>new ze(r,t).compare(new ze(e,t));var j=Qt;const er=j,tr=(r,e,t)=>er(r,e,t)===0;var Oe=tr;const Ye=re,rr=Oe,nr=(r,e)=>{if(rr(r,e))return null;{const t=Ye(r),n=Ye(e),a=t.prerelease.length||n.prerelease.length,s=a?"pre":"",i=a?"prerelease":"";for(const c in t)if((c==="major"||c==="minor"||c==="patch")&&t[c]!==n[c])return s+c;return i}};var sr=nr;const ar=B,ir=(r,e)=>new ar(r,e).major;var or=ir;const lr=B,dr=(r,e)=>new lr(r,e).minor;var hr=dr;const cr=B,ur=(r,e)=>new cr(r,e).patch;var fr=ur;const mr=re,br=(r,e)=>{const t=mr(r,e);return t&&t.prerelease.length?t.prerelease:null};var pr=br;const gr=j,Ar=(r,e,t)=>gr(e,r,t);var vr=Ar;const wr=j,Er=(r,e)=>wr(r,e,!0);var yr=Er;const Je=B,Tr=(r,e,t)=>{const n=new Je(r,t),a=new Je(e,t);return n.compare(a)||n.compareBuild(a)};var Pe=Tr;const Sr=Pe,Rr=(r,e)=>r.sort((t,n)=>Sr(t,n,e));var Cr=Rr;const $r=Pe,Ir=(r,e)=>r.sort((t,n)=>$r(n,t,e));var xr=Ir;const kr=j,Lr=(r,e,t)=>kr(r,e,t)>0;var we=Lr;const Nr=j,Or=(r,e,t)=>Nr(r,e,t)<0;var Be=Or;const Pr=j,Br=(r,e,t)=>Pr(r,e,t)!==0;var ut=Br;const Gr=j,Fr=(r,e,t)=>Gr(r,e,t)>=0;var Ge=Fr;const _r=j,Dr=(r,e,t)=>_r(r,e,t)<=0;var Fe=Dr;const Ur=Oe,Hr=ut,Vr=we,jr=Ge,Mr=Be,Xr=Fe,Wr=(r,e,t,n)=>{switch(e){case"===":return typeof r=="object"&&(r=r.version),typeof t=="object"&&(t=t.version),r===t;case"!==":return typeof r=="object"&&(r=r.version),typeof t=="object"&&(t=t.version),r!==t;case"":case"=":case"==":return Ur(r,t,n);case"!=":return Hr(r,t,n);case">":return Vr(r,t,n);case">=":return jr(r,t,n);case"<":return Mr(r,t,n);case"<=":return Xr(r,t,n);default:throw new TypeError(`Invalid operator: ${e}`)}};var ft=Wr;const qr=B,zr=re,{re:ce,t:ue}=z.exports,Yr=(r,e)=>{if(r instanceof qr)return r;if(typeof r=="number"&&(r=String(r)),typeof r!="string")return null;e=e||{};let t=null;if(!e.rtl)t=r.match(ce[ue.COERCE]);else{let n;for(;(n=ce[ue.COERCERTL].exec(r))&&(!t||t.index+t[0].length!==r.length);)(!t||n.index+n[0].length!==t.index+t[0].length)&&(t=n),ce[ue.COERCERTL].lastIndex=n.index+n[1].length+n[2].length;ce[ue.COERCERTL].lastIndex=-1}return t===null?null:zr(`${t[2]}.${t[3]||"0"}.${t[4]||"0"}`,e)};var Jr=Yr,Te,Ze;function Zr(){return Ze||(Ze=1,Te=function(r){r.prototype[Symbol.iterator]=function*(){for(let e=this.head;e;e=e.next)yield e.value}}),Te}var Kr=S;S.Node=K;S.create=S;function S(r){var e=this;if(e instanceof S||(e=new S),e.tail=null,e.head=null,e.length=0,r&&typeof r.forEach=="function")r.forEach(function(a){e.push(a)});else if(arguments.length>0)for(var t=0,n=arguments.length;t<n;t++)e.push(arguments[t]);return e}S.prototype.removeNode=function(r){if(r.list!==this)throw new Error("removing node which does not belong to this list");var e=r.next,t=r.prev;return e&&(e.prev=t),t&&(t.next=e),r===this.head&&(this.head=e),r===this.tail&&(this.tail=t),r.list.length--,r.next=null,r.prev=null,r.list=null,e};S.prototype.unshiftNode=function(r){if(r!==this.head){r.list&&r.list.removeNode(r);var e=this.head;r.list=this,r.next=e,e&&(e.prev=r),this.head=r,this.tail||(this.tail=r),this.length++}};S.prototype.pushNode=function(r){if(r!==this.tail){r.list&&r.list.removeNode(r);var e=this.tail;r.list=this,r.prev=e,e&&(e.next=r),this.tail=r,this.head||(this.head=r),this.length++}};S.prototype.push=function(){for(var r=0,e=arguments.length;r<e;r++)en(this,arguments[r]);return this.length};S.prototype.unshift=function(){for(var r=0,e=arguments.length;r<e;r++)tn(this,arguments[r]);return this.length};S.prototype.pop=function(){if(!!this.tail){var r=this.tail.value;return this.tail=this.tail.prev,this.tail?this.tail.next=null:this.head=null,this.length--,r}};S.prototype.shift=function(){if(!!this.head){var r=this.head.value;return this.head=this.head.next,this.head?this.head.prev=null:this.tail=null,this.length--,r}};S.prototype.forEach=function(r,e){e=e||this;for(var t=this.head,n=0;t!==null;n++)r.call(e,t.value,n,this),t=t.next};S.prototype.forEachReverse=function(r,e){e=e||this;for(var t=this.tail,n=this.length-1;t!==null;n--)r.call(e,t.value,n,this),t=t.prev};S.prototype.get=function(r){for(var e=0,t=this.head;t!==null&&e<r;e++)t=t.next;if(e===r&&t!==null)return t.value};S.prototype.getReverse=function(r){for(var e=0,t=this.tail;t!==null&&e<r;e++)t=t.prev;if(e===r&&t!==null)return t.value};S.prototype.map=function(r,e){e=e||this;for(var t=new S,n=this.head;n!==null;)t.push(r.call(e,n.value,this)),n=n.next;return t};S.prototype.mapReverse=function(r,e){e=e||this;for(var t=new S,n=this.tail;n!==null;)t.push(r.call(e,n.value,this)),n=n.prev;return t};S.prototype.reduce=function(r,e){var t,n=this.head;if(arguments.length>1)t=e;else if(this.head)n=this.head.next,t=this.head.value;else throw new TypeError("Reduce of empty list with no initial value");for(var a=0;n!==null;a++)t=r(t,n.value,a),n=n.next;return t};S.prototype.reduceReverse=function(r,e){var t,n=this.tail;if(arguments.length>1)t=e;else if(this.tail)n=this.tail.prev,t=this.tail.value;else throw new TypeError("Reduce of empty list with no initial value");for(var a=this.length-1;n!==null;a--)t=r(t,n.value,a),n=n.prev;return t};S.prototype.toArray=function(){for(var r=new Array(this.length),e=0,t=this.head;t!==null;e++)r[e]=t.value,t=t.next;return r};S.prototype.toArrayReverse=function(){for(var r=new Array(this.length),e=0,t=this.tail;t!==null;e++)r[e]=t.value,t=t.prev;return r};S.prototype.slice=function(r,e){e=e||this.length,e<0&&(e+=this.length),r=r||0,r<0&&(r+=this.length);var t=new S;if(e<r||e<0)return t;r<0&&(r=0),e>this.length&&(e=this.length);for(var n=0,a=this.head;a!==null&&n<r;n++)a=a.next;for(;a!==null&&n<e;n++,a=a.next)t.push(a.value);return t};S.prototype.sliceReverse=function(r,e){e=e||this.length,e<0&&(e+=this.length),r=r||0,r<0&&(r+=this.length);var t=new S;if(e<r||e<0)return t;r<0&&(r=0),e>this.length&&(e=this.length);for(var n=this.length,a=this.tail;a!==null&&n>e;n--)a=a.prev;for(;a!==null&&n>r;n--,a=a.prev)t.push(a.value);return t};S.prototype.splice=function(r,e,...t){r>this.length&&(r=this.length-1),r<0&&(r=this.length+r);for(var n=0,a=this.head;a!==null&&n<r;n++)a=a.next;for(var s=[],n=0;a&&n<e;n++)s.push(a.value),a=this.removeNode(a);a===null&&(a=this.tail),a!==this.head&&a!==this.tail&&(a=a.prev);for(var n=0;n<t.length;n++)a=Qr(this,a,t[n]);return s};S.prototype.reverse=function(){for(var r=this.head,e=this.tail,t=r;t!==null;t=t.prev){var n=t.prev;t.prev=t.next,t.next=n}return this.head=e,this.tail=r,this};function Qr(r,e,t){var n=e===r.head?new K(t,null,e,r):new K(t,e,e.next,r);return n.next===null&&(r.tail=n),n.prev===null&&(r.head=n),r.length++,n}function en(r,e){r.tail=new K(e,r.tail,null,r),r.head||(r.head=r.tail),r.length++}function tn(r,e){r.head=new K(e,null,r.head,r),r.tail||(r.tail=r.head),r.length++}function K(r,e,t,n){if(!(this instanceof K))return new K(r,e,t,n);this.list=n,this.value=r,e?(e.next=this,this.prev=e):this.prev=null,t?(t.prev=this,this.next=t):this.next=null}try{Zr()(S)}catch{}const rn=Kr,J=Symbol("max"),W=Symbol("length"),ee=Symbol("lengthCalculator"),oe=Symbol("allowStale"),Z=Symbol("maxAge"),X=Symbol("dispose"),Ke=Symbol("noDisposeOnSet"),N=Symbol("lruList"),V=Symbol("cache"),mt=Symbol("updateAgeOnGet"),Se=()=>1;class nn{constructor(e){if(typeof e=="number"&&(e={max:e}),e||(e={}),e.max&&(typeof e.max!="number"||e.max<0))throw new TypeError("max must be a non-negative number");this[J]=e.max||1/0;const t=e.length||Se;if(this[ee]=typeof t!="function"?Se:t,this[oe]=e.stale||!1,e.maxAge&&typeof e.maxAge!="number")throw new TypeError("maxAge must be a number");this[Z]=e.maxAge||0,this[X]=e.dispose,this[Ke]=e.noDisposeOnSet||!1,this[mt]=e.updateAgeOnGet||!1,this.reset()}set max(e){if(typeof e!="number"||e<0)throw new TypeError("max must be a non-negative number");this[J]=e||1/0,ae(this)}get max(){return this[J]}set allowStale(e){this[oe]=!!e}get allowStale(){return this[oe]}set maxAge(e){if(typeof e!="number")throw new TypeError("maxAge must be a non-negative number");this[Z]=e,ae(this)}get maxAge(){return this[Z]}set lengthCalculator(e){typeof e!="function"&&(e=Se),e!==this[ee]&&(this[ee]=e,this[W]=0,this[N].forEach(t=>{t.length=this[ee](t.value,t.key),this[W]+=t.length})),ae(this)}get lengthCalculator(){return this[ee]}get length(){return this[W]}get itemCount(){return this[N].length}rforEach(e,t){t=t||this;for(let n=this[N].tail;n!==null;){const a=n.prev;Qe(this,e,n,t),n=a}}forEach(e,t){t=t||this;for(let n=this[N].head;n!==null;){const a=n.next;Qe(this,e,n,t),n=a}}keys(){return this[N].toArray().map(e=>e.key)}values(){return this[N].toArray().map(e=>e.value)}reset(){this[X]&&this[N]&&this[N].length&&this[N].forEach(e=>this[X](e.key,e.value)),this[V]=new Map,this[N]=new rn,this[W]=0}dump(){return this[N].map(e=>pe(this,e)?!1:{k:e.key,v:e.value,e:e.now+(e.maxAge||0)}).toArray().filter(e=>e)}dumpLru(){return this[N]}set(e,t,n){if(n=n||this[Z],n&&typeof n!="number")throw new TypeError("maxAge must be a number");const a=n?Date.now():0,s=this[ee](t,e);if(this[V].has(e)){if(s>this[J])return te(this,this[V].get(e)),!1;const o=this[V].get(e).value;return this[X]&&(this[Ke]||this[X](e,o.value)),o.now=a,o.maxAge=n,o.value=t,this[W]+=s-o.length,o.length=s,this.get(e),ae(this),!0}const i=new sn(e,t,s,a,n);return i.length>this[J]?(this[X]&&this[X](e,t),!1):(this[W]+=i.length,this[N].unshift(i),this[V].set(e,this[N].head),ae(this),!0)}has(e){if(!this[V].has(e))return!1;const t=this[V].get(e).value;return!pe(this,t)}get(e){return Re(this,e,!0)}peek(e){return Re(this,e,!1)}pop(){const e=this[N].tail;return e?(te(this,e),e.value):null}del(e){te(this,this[V].get(e))}load(e){this.reset();const t=Date.now();for(let n=e.length-1;n>=0;n--){const a=e[n],s=a.e||0;if(s===0)this.set(a.k,a.v);else{const i=s-t;i>0&&this.set(a.k,a.v,i)}}}prune(){this[V].forEach((e,t)=>Re(this,t,!1))}}const Re=(r,e,t)=>{const n=r[V].get(e);if(n){const a=n.value;if(pe(r,a)){if(te(r,n),!r[oe])return}else t&&(r[mt]&&(n.value.now=Date.now()),r[N].unshiftNode(n));return a.value}},pe=(r,e)=>{if(!e||!e.maxAge&&!r[Z])return!1;const t=Date.now()-e.now;return e.maxAge?t>e.maxAge:r[Z]&&t>r[Z]},ae=r=>{if(r[W]>r[J])for(let e=r[N].tail;r[W]>r[J]&&e!==null;){const t=e.prev;te(r,e),e=t}},te=(r,e)=>{if(e){const t=e.value;r[X]&&r[X](t.key,t.value),r[W]-=t.length,r[V].delete(t.key),r[N].removeNode(e)}};class sn{constructor(e,t,n,a,s){this.key=e,this.value=t,this.length=n,this.now=a,this.maxAge=s||0}}const Qe=(r,e,t,n)=>{let a=t.value;pe(r,a)&&(te(r,t),r[oe]||(a=void 0)),a&&e.call(n,a.value,a.key,r)};var an=nn,Ce,et;function M(){if(et)return Ce;et=1;class r{constructor(h,g){if(g=n(g),h instanceof r)return h.loose===!!g.loose&&h.includePrerelease===!!g.includePrerelease?h:new r(h.raw,g);if(h instanceof a)return this.raw=h.value,this.set=[[h]],this.format(),this;if(this.options=g,this.loose=!!g.loose,this.includePrerelease=!!g.includePrerelease,this.raw=h,this.set=h.split("||").map(b=>this.parseRange(b.trim())).filter(b=>b.length),!this.set.length)throw new TypeError(`Invalid SemVer Range: ${h}`);if(this.set.length>1){const b=this.set[0];if(this.set=this.set.filter(p=>!v(p[0])),this.set.length===0)this.set=[b];else if(this.set.length>1){for(const p of this.set)if(p.length===1&&f(p[0])){this.set=[p];break}}}this.format()}format(){return this.range=this.set.map(h=>h.join(" ").trim()).join("||").trim(),this.range}toString(){return this.range}parseRange(h){h=h.trim();const b=`parseRange:${Object.keys(this.options).join(",")}:${h}`,p=t.get(b);if(p)return p;const m=this.options.loose,w=m?c[o.HYPHENRANGELOOSE]:c[o.HYPHENRANGE];h=h.replace(w,wt(this.options.includePrerelease)),s("hyphen replace",h),h=h.replace(c[o.COMPARATORTRIM],A),s("comparator trim",h),h=h.replace(c[o.TILDETRIM],l),h=h.replace(c[o.CARETTRIM],d),h=h.split(/\s+/).join(" ");let R=h.split(" ").map(L=>E(L,this.options)).join(" ").split(/\s+/).map(L=>vt(L,this.options));m&&(R=R.filter(L=>(s("loose invalid filter",L,this.options),!!L.match(c[o.COMPARATORLOOSE])))),s("range list",R);const y=new Map,x=R.map(L=>new a(L,this.options));for(const L of x){if(v(L))return[L];y.set(L.value,L)}y.size>1&&y.has("")&&y.delete("");const G=[...y.values()];return t.set(b,G),G}intersects(h,g){if(!(h instanceof r))throw new TypeError("a Range is required");return this.set.some(b=>$(b,g)&&h.set.some(p=>$(p,g)&&b.every(m=>p.every(w=>m.intersects(w,g)))))}test(h){if(!h)return!1;if(typeof h=="string")try{h=new i(h,this.options)}catch{return!1}for(let g=0;g<this.set.length;g++)if(Et(this.set[g],h,this.options))return!0;return!1}}Ce=r;const e=an,t=new e({max:1e3}),n=ve,a=Ee(),s=Ae,i=B,{re:c,t:o,comparatorTrimReplace:A,tildeTrimReplace:l,caretTrimReplace:d}=z.exports,v=u=>u.value==="<0.0.0-0",f=u=>u.value==="",$=(u,h)=>{let g=!0;const b=u.slice();let p=b.pop();for(;g&&b.length;)g=b.every(m=>p.intersects(m,h)),p=b.pop();return g},E=(u,h)=>(s("comp",u,h),u=le(u,h),s("caret",u),u=I(u,h),s("tildes",u),u=pt(u,h),s("xrange",u),u=At(u,h),s("stars",u),u),T=u=>!u||u.toLowerCase()==="x"||u==="*",I=(u,h)=>u.trim().split(/\s+/).map(g=>Y(g,h)).join(" "),Y=(u,h)=>{const g=h.loose?c[o.TILDELOOSE]:c[o.TILDE];return u.replace(g,(b,p,m,w,R)=>{s("tilde",u,b,p,m,w,R);let y;return T(p)?y="":T(m)?y=`>=${p}.0.0 <${+p+1}.0.0-0`:T(w)?y=`>=${p}.${m}.0 <${p}.${+m+1}.0-0`:R?(s("replaceTilde pr",R),y=`>=${p}.${m}.${w}-${R} <${p}.${+m+1}.0-0`):y=`>=${p}.${m}.${w} <${p}.${+m+1}.0-0`,s("tilde return",y),y})},le=(u,h)=>u.trim().split(/\s+/).map(g=>ne(g,h)).join(" "),ne=(u,h)=>{s("caret",u,h);const g=h.loose?c[o.CARETLOOSE]:c[o.CARET],b=h.includePrerelease?"-0":"";return u.replace(g,(p,m,w,R,y)=>{s("caret",u,p,m,w,R,y);let x;return T(m)?x="":T(w)?x=`>=${m}.0.0${b} <${+m+1}.0.0-0`:T(R)?m==="0"?x=`>=${m}.${w}.0${b} <${m}.${+w+1}.0-0`:x=`>=${m}.${w}.0${b} <${+m+1}.0.0-0`:y?(s("replaceCaret pr",y),m==="0"?w==="0"?x=`>=${m}.${w}.${R}-${y} <${m}.${w}.${+R+1}-0`:x=`>=${m}.${w}.${R}-${y} <${m}.${+w+1}.0-0`:x=`>=${m}.${w}.${R}-${y} <${+m+1}.0.0-0`):(s("no pr"),m==="0"?w==="0"?x=`>=${m}.${w}.${R}${b} <${m}.${w}.${+R+1}-0`:x=`>=${m}.${w}.${R}${b} <${m}.${+w+1}.0-0`:x=`>=${m}.${w}.${R} <${+m+1}.0.0-0`),s("caret return",x),x})},pt=(u,h)=>(s("replaceXRanges",u,h),u.split(/\s+/).map(g=>gt(g,h)).join(" ")),gt=(u,h)=>{u=u.trim();const g=h.loose?c[o.XRANGELOOSE]:c[o.XRANGE];return u.replace(g,(b,p,m,w,R,y)=>{s("xRange",u,b,p,m,w,R,y);const x=T(m),G=x||T(w),L=G||T(R),se=L;return p==="="&&se&&(p=""),y=h.includePrerelease?"-0":"",x?p===">"||p==="<"?b="<0.0.0-0":b="*":p&&se?(G&&(w=0),R=0,p===">"?(p=">=",G?(m=+m+1,w=0,R=0):(w=+w+1,R=0)):p==="<="&&(p="<",G?m=+m+1:w=+w+1),p==="<"&&(y="-0"),b=`${p+m}.${w}.${R}${y}`):G?b=`>=${m}.0.0${y} <${+m+1}.0.0-0`:L&&(b=`>=${m}.${w}.0${y} <${m}.${+w+1}.0-0`),s("xRange return",b),b})},At=(u,h)=>(s("replaceStars",u,h),u.trim().replace(c[o.STAR],"")),vt=(u,h)=>(s("replaceGTE0",u,h),u.trim().replace(c[h.includePrerelease?o.GTE0PRE:o.GTE0],"")),wt=u=>(h,g,b,p,m,w,R,y,x,G,L,se,Qn)=>(T(b)?g="":T(p)?g=`>=${b}.0.0${u?"-0":""}`:T(m)?g=`>=${b}.${p}.0${u?"-0":""}`:w?g=`>=${g}`:g=`>=${g}${u?"-0":""}`,T(x)?y="":T(G)?y=`<${+x+1}.0.0-0`:T(L)?y=`<${x}.${+G+1}.0-0`:se?y=`<=${x}.${G}.${L}-${se}`:u?y=`<${x}.${G}.${+L+1}-0`:y=`<=${y}`,`${g} ${y}`.trim()),Et=(u,h,g)=>{for(let b=0;b<u.length;b++)if(!u[b].test(h))return!1;if(h.prerelease.length&&!g.includePrerelease){for(let b=0;b<u.length;b++)if(s(u[b].semver),u[b].semver!==a.ANY&&u[b].semver.prerelease.length>0){const p=u[b].semver;if(p.major===h.major&&p.minor===h.minor&&p.patch===h.patch)return!0}return!1}return!0};return Ce}var $e,tt;function Ee(){if(tt)return $e;tt=1;const r=Symbol("SemVer ANY");class e{static get ANY(){return r}constructor(l,d){if(d=t(d),l instanceof e){if(l.loose===!!d.loose)return l;l=l.value}i("comparator",l,d),this.options=d,this.loose=!!d.loose,this.parse(l),this.semver===r?this.value="":this.value=this.operator+this.semver.version,i("comp",this)}parse(l){const d=this.options.loose?n[a.COMPARATORLOOSE]:n[a.COMPARATOR],v=l.match(d);if(!v)throw new TypeError(`Invalid comparator: ${l}`);this.operator=v[1]!==void 0?v[1]:"",this.operator==="="&&(this.operator=""),v[2]?this.semver=new c(v[2],this.options.loose):this.semver=r}toString(){return this.value}test(l){if(i("Comparator.test",l,this.options.loose),this.semver===r||l===r)return!0;if(typeof l=="string")try{l=new c(l,this.options)}catch{return!1}return s(l,this.operator,this.semver,this.options)}intersects(l,d){if(!(l instanceof e))throw new TypeError("a Comparator is required");if((!d||typeof d!="object")&&(d={loose:!!d,includePrerelease:!1}),this.operator==="")return this.value===""?!0:new o(l.value,d).test(this.value);if(l.operator==="")return l.value===""?!0:new o(this.value,d).test(l.semver);const v=(this.operator===">="||this.operator===">")&&(l.operator===">="||l.operator===">"),f=(this.operator==="<="||this.operator==="<")&&(l.operator==="<="||l.operator==="<"),$=this.semver.version===l.semver.version,E=(this.operator===">="||this.operator==="<=")&&(l.operator===">="||l.operator==="<="),T=s(this.semver,"<",l.semver,d)&&(this.operator===">="||this.operator===">")&&(l.operator==="<="||l.operator==="<"),I=s(this.semver,">",l.semver,d)&&(this.operator==="<="||this.operator==="<")&&(l.operator===">="||l.operator===">");return v||f||$&&E||T||I}}$e=e;const t=ve,{re:n,t:a}=z.exports,s=ft,i=Ae,c=B,o=M();return $e}const on=M(),ln=(r,e,t)=>{try{e=new on(e,t)}catch{return!1}return e.test(r)};var ye=ln;const dn=M(),hn=(r,e)=>new dn(r,e).set.map(t=>t.map(n=>n.value).join(" ").trim().split(" "));var cn=hn;const un=B,fn=M(),mn=(r,e,t)=>{let n=null,a=null,s=null;try{s=new fn(e,t)}catch{return null}return r.forEach(i=>{s.test(i)&&(!n||a.compare(i)===-1)&&(n=i,a=new un(n,t))}),n};var bn=mn;const pn=B,gn=M(),An=(r,e,t)=>{let n=null,a=null,s=null;try{s=new gn(e,t)}catch{return null}return r.forEach(i=>{s.test(i)&&(!n||a.compare(i)===1)&&(n=i,a=new pn(n,t))}),n};var vn=An;const Ie=B,wn=M(),rt=we,En=(r,e)=>{r=new wn(r,e);let t=new Ie("0.0.0");if(r.test(t)||(t=new Ie("0.0.0-0"),r.test(t)))return t;t=null;for(let n=0;n<r.set.length;++n){const a=r.set[n];let s=null;a.forEach(i=>{const c=new Ie(i.semver.version);switch(i.operator){case">":c.prerelease.length===0?c.patch++:c.prerelease.push(0),c.raw=c.format();case"":case">=":(!s||rt(c,s))&&(s=c);break;case"<":case"<=":break;default:throw new Error(`Unexpected operation: ${i.operator}`)}}),s&&(!t||rt(t,s))&&(t=s)}return t&&r.test(t)?t:null};var yn=En;const Tn=M(),Sn=(r,e)=>{try{return new Tn(r,e).range||"*"}catch{return null}};var Rn=Sn;const Cn=B,bt=Ee(),{ANY:$n}=bt,In=M(),xn=ye,nt=we,st=Be,kn=Fe,Ln=Ge,Nn=(r,e,t,n)=>{r=new Cn(r,n),e=new In(e,n);let a,s,i,c,o;switch(t){case">":a=nt,s=kn,i=st,c=">",o=">=";break;case"<":a=st,s=Ln,i=nt,c="<",o="<=";break;default:throw new TypeError('Must provide a hilo val of "<" or ">"')}if(xn(r,e,n))return!1;for(let A=0;A<e.set.length;++A){const l=e.set[A];let d=null,v=null;if(l.forEach(f=>{f.semver===$n&&(f=new bt(">=0.0.0")),d=d||f,v=v||f,a(f.semver,d.semver,n)?d=f:i(f.semver,v.semver,n)&&(v=f)}),d.operator===c||d.operator===o||(!v.operator||v.operator===c)&&s(r,v.semver))return!1;if(v.operator===o&&i(r,v.semver))return!1}return!0};var _e=Nn;const On=_e,Pn=(r,e,t)=>On(r,e,">",t);var Bn=Pn;const Gn=_e,Fn=(r,e,t)=>Gn(r,e,"<",t);var _n=Fn;const at=M(),Dn=(r,e,t)=>(r=new at(r,t),e=new at(e,t),r.intersects(e));var Un=Dn;const Hn=ye,Vn=j;var jn=(r,e,t)=>{const n=[];let a=null,s=null;const i=r.sort((l,d)=>Vn(l,d,t));for(const l of i)Hn(l,e,t)?(s=l,a||(a=l)):(s&&n.push([a,s]),s=null,a=null);a&&n.push([a,null]);const c=[];for(const[l,d]of n)l===d?c.push(l):!d&&l===i[0]?c.push("*"):d?l===i[0]?c.push(`<=${d}`):c.push(`${l} - ${d}`):c.push(`>=${l}`);const o=c.join(" || "),A=typeof e.raw=="string"?e.raw:String(e);return o.length<A.length?o:e};const it=M(),fe=Ee(),{ANY:xe}=fe,ie=ye,De=j,Mn=(r,e,t={})=>{if(r===e)return!0;r=new it(r,t),e=new it(e,t);let n=!1;e:for(const a of r.set){for(const s of e.set){const i=Xn(a,s,t);if(n=n||i!==null,i)continue e}if(n)return!1}return!0},Xn=(r,e,t)=>{if(r===e)return!0;if(r.length===1&&r[0].semver===xe){if(e.length===1&&e[0].semver===xe)return!0;t.includePrerelease?r=[new fe(">=0.0.0-0")]:r=[new fe(">=0.0.0")]}if(e.length===1&&e[0].semver===xe){if(t.includePrerelease)return!0;e=[new fe(">=0.0.0")]}const n=new Set;let a,s;for(const f of r)f.operator===">"||f.operator===">="?a=ot(a,f,t):f.operator==="<"||f.operator==="<="?s=lt(s,f,t):n.add(f.semver);if(n.size>1)return null;let i;if(a&&s){if(i=De(a.semver,s.semver,t),i>0)return null;if(i===0&&(a.operator!==">="||s.operator!=="<="))return null}for(const f of n){if(a&&!ie(f,String(a),t)||s&&!ie(f,String(s),t))return null;for(const $ of e)if(!ie(f,String($),t))return!1;return!0}let c,o,A,l,d=s&&!t.includePrerelease&&s.semver.prerelease.length?s.semver:!1,v=a&&!t.includePrerelease&&a.semver.prerelease.length?a.semver:!1;d&&d.prerelease.length===1&&s.operator==="<"&&d.prerelease[0]===0&&(d=!1);for(const f of e){if(l=l||f.operator===">"||f.operator===">=",A=A||f.operator==="<"||f.operator==="<=",a){if(v&&f.semver.prerelease&&f.semver.prerelease.length&&f.semver.major===v.major&&f.semver.minor===v.minor&&f.semver.patch===v.patch&&(v=!1),f.operator===">"||f.operator===">="){if(c=ot(a,f,t),c===f&&c!==a)return!1}else if(a.operator===">="&&!ie(a.semver,String(f),t))return!1}if(s){if(d&&f.semver.prerelease&&f.semver.prerelease.length&&f.semver.major===d.major&&f.semver.minor===d.minor&&f.semver.patch===d.patch&&(d=!1),f.operator==="<"||f.operator==="<="){if(o=lt(s,f,t),o===f&&o!==s)return!1}else if(s.operator==="<="&&!ie(s.semver,String(f),t))return!1}if(!f.operator&&(s||a)&&i!==0)return!1}return!(a&&A&&!s&&i!==0||s&&l&&!a&&i!==0||v||d)},ot=(r,e,t)=>{if(!r)return e;const n=De(r.semver,e.semver,t);return n>0?r:n<0||e.operator===">"&&r.operator===">="?e:r},lt=(r,e,t)=>{if(!r)return e;const n=De(r.semver,e.semver,t);return n<0?r:n>0||e.operator==="<"&&r.operator==="<="?e:r};var Wn=Mn;const ke=z.exports;ke.re,ke.src,ke.t,ge.SEMVER_SPEC_VERSION,Le.compareIdentifiers,Le.rcompareIdentifiers,Ee(),M();function dt(r,e,t){const n=r.slice();return n[1]=e[t],n}function qn(r){let e,t,n,a=r[1].mcVersion+"",s,i,c=r[1].version+"",o;return{c(){e=F("a"),t=F("h3"),n=O("ChaosAwakens Beta - "),s=O(a),i=O(" - "),o=O(c),this.h()},l(A){e=_(A,"A",{href:!0});var l=D(e);t=_(l,"H3",{class:!0});var d=D(t);n=P(d,"ChaosAwakens Beta - "),s=P(d,a),i=P(d," - "),o=P(d,c),d.forEach(k),l.forEach(k),this.h()},h(){U(t,"class","svelte-1rm1xus"),U(e,"href","downloads/ChaosAwakensBeta"+r[1].mcVersion+"v"+r[1].version+".jar")},m(A,l){q(A,e,l),C(e,t),C(t,n),C(t,s),C(t,i),C(t,o)},p:Ne,d(A){A&&k(e)}}}function zn(r){let e,t,n,a=r[1].mcVersion+"",s,i,c=r[1].version+"",o;return{c(){e=F("a"),t=F("h3"),n=O("ChaosAwakens Alpha - "),s=O(a),i=O(" - "),o=O(c),this.h()},l(A){e=_(A,"A",{href:!0});var l=D(e);t=_(l,"H3",{class:!0});var d=D(t);n=P(d,"ChaosAwakens Alpha - "),s=P(d,a),i=P(d," - "),o=P(d,c),d.forEach(k),l.forEach(k),this.h()},h(){U(t,"class","svelte-1rm1xus"),U(e,"href","downloads/ChaosAwakensAlpha"+r[1].mcVersion+"v"+r[1].version+".jar")},m(A,l){q(A,e,l),C(e,t),C(t,n),C(t,s),C(t,i),C(t,o)},p:Ne,d(A){A&&k(e)}}}function Yn(r){let e,t,n,a=r[1].mcVersion+"",s,i,c=r[1].version+"",o;return{c(){e=F("a"),t=F("h3"),n=O("ChaosAwakens - "),s=O(a),i=O(" - "),o=O(c),this.h()},l(A){e=_(A,"A",{href:!0});var l=D(e);t=_(l,"H3",{class:!0});var d=D(t);n=P(d,"ChaosAwakens - "),s=P(d,a),i=P(d," - "),o=P(d,c),d.forEach(k),l.forEach(k),this.h()},h(){U(t,"class","svelte-1rm1xus"),U(e,"href","downloads/chaosawakens-"+r[1].mcVersion+"-"+r[1].version+".jar")},m(A,l){q(A,e,l),C(e,t),C(t,n),C(t,s),C(t,i),C(t,o)},p:Ne,d(A){A&&k(e)}}}function ht(r){let e,t,n,a,s=r[1].changelog+"",i;function c(l,d){return l[1].branch=="stable"?Yn:l[1].branch=="alpha"?zn:qn}let A=c(r)(r);return{c(){e=F("details"),t=F("summary"),A.c(),n=me(),a=F("p"),i=me(),this.h()},l(l){e=_(l,"DETAILS",{class:!0});var d=D(e);t=_(d,"SUMMARY",{class:!0});var v=D(t);A.l(v),v.forEach(k),n=be(d),a=_(d,"P",{class:!0});var f=D(a);f.forEach(k),i=be(d),d.forEach(k),this.h()},h(){U(t,"class","svelte-1rm1xus"),U(a,"class","svelte-1rm1xus"),U(e,"class","svelte-1rm1xus")},m(l,d){q(l,e,d),C(e,t),A.m(t,null),C(e,n),C(e,a),a.innerHTML=s,C(e,i)},p(l,d){A.p(l,d)},d(l){l&&k(e),A.d()}}}function Jn(r){let e,t,n,a,s,i,c,o,A,l,d,v;e=new Nt({props:{title:"Downloads"}});let f=r[0],$=[];for(let E=0;E<f.length;E+=1)$[E]=ht(dt(r,f,E));return{c(){Rt(e.$$.fragment),t=me(),n=F("h3"),a=F("a"),s=O("GeckoLib"),i=O(" and "),c=F("a"),o=O("AttributeFix"),A=O(" are required for the mod to function!"),l=me(),d=F("div");for(let E=0;E<$.length;E+=1)$[E].c();this.h()},l(E){Ct(e.$$.fragment,E),t=be(E),n=_(E,"H3",{class:!0});var T=D(n);a=_(T,"A",{href:!0});var I=D(a);s=P(I,"GeckoLib"),I.forEach(k),i=P(T," and "),c=_(T,"A",{href:!0});var Y=D(c);o=P(Y,"AttributeFix"),Y.forEach(k),A=P(T," are required for the mod to function!"),T.forEach(k),l=be(E),d=_(E,"DIV",{class:!0});var le=D(d);for(let ne=0;ne<$.length;ne+=1)$[ne].l(le);le.forEach(k),this.h()},h(){U(a,"href","https://www.curseforge.com/minecraft/mc-mods/geckolib/"),U(c,"href","https://www.curseforge.com/minecraft/mc-mods/attributefix"),U(n,"class","svelte-1rm1xus"),U(d,"class","versions")},m(E,T){$t(e,E,T),q(E,t,T),q(E,n,T),C(n,a),C(a,s),C(n,i),C(n,c),C(c,o),C(n,A),q(E,l,T),q(E,d,T);for(let I=0;I<$.length;I+=1)$[I].m(d,null);v=!0},p(E,[T]){if(T&1){f=E[0];let I;for(I=0;I<f.length;I+=1){const Y=dt(E,f,I);$[I]?$[I].p(Y,T):($[I]=ht(Y),$[I].c(),$[I].m(d,null))}for(;I<$.length;I+=1)$[I].d(1);$.length=f.length}},i(E){v||(It(e.$$.fragment,E),v=!0)},o(E){xt(e.$$.fragment,E),v=!1},d(E){kt(e,E),E&&k(t),E&&k(n),E&&k(l),E&&k(d),Lt($,E)}}}function Zn(r,e){var t,n,a;for(r=(r.version+"").split("."),e=(e.version+"").split("."),a=Math.max(r.length,e.length),t=0;t<a;t++)if(r[t]===void 0&&(r[t]="0"),e[t]===void 0&&(e[t]="0"),n=parseInt(r[t],10)-parseInt(e[t],10),n!==0)return n<0?-1:1;return 0}function Kn(r){let e=[{version:"0.9.0.0",mcVersion:"1.16.5",branch:"stable",changelog:`
+                    - Added corn and tomato crops work *and* generate in the world. <br>
+					- Added tube worms. <br>
+					- Added Advancements. <br>
+					- Ant and termite nests now spawn and function! Added crystal termite nest. <br>
+					- Illusioners can now spawn in village raids! <br>
+					- Giants now have some AI! <br>
+					- You can trade for some Chaos Awakens items from villagers! Try a farmer, butcher, fletcher or a wandering trader, you may get lucky. <br>
+					- Added spawn eggs for some vanilla mobs. The illusioner, the giant, the wither and the ender dragon. <br>
+					- Added 7 new variants of Ent(for every vanilla wood type), for your Ent-y needs! <br>
+					- Added 7 new variants of Ent Tree dungeons and updated the trap! Gotta see 'em all! <br>
+					- Added Wasps and their hives. Also added a "nest block" that is a decorative bees nest. <br>
+					- Added the Stinkbug and the Dead Stinkbug item. <br>
+					- Ore generation rebalances! <br>
+					- Added nether ruby ore. Now you can find rubies in Nether lava pockets. <br>
+					- Royal guardian boots now give slow falling only when shifting. <br>
+					- Added apple, cherry and peach trees with delicious fruits! <br>
+					- Added dupe tree wood, currently has no function! <br>
+					- Added ender pearl and eye of ender blocks! <br>
+					- Added big bertha and the blade, the guard and the handle! (currently unobtainable) <br>
+					- Added battleaxe and queen scale battleaxe! (currently unobtainable) <br>
+					- Added ultimate fishing rod! (doesn't work properly yet) <br>
+					- Added moth scale, royal guardian and queen scale armors! (currently unobtainable) <br>
+					- Added miners dream! The mines are mineier! Added moldy wood planks and mining lamps. <br>
+					- Added fossilised wtf, scorpion, wasp and piraporu. Only the wasp is usable. <br>
+					- Added queen scale, ender dragon scale, mantis claw, moth scales, nightmare scale, vortex eye and triffid goo! (Only the ender dragon scale is obtainable)<br>
+					- Added some coins. <br>
+					- Added random teleport block! <br>
+					- Added custom tooltip descriptions. <br>
+					- Changes to village mania. Fruit trees and crops spawn here and more mob spawning! <br>
+					- Changes to mining dimension. Stalagmite valley biome! <br>
+					- Added extra config options. <br>
+					- You can now breed enchanted golden apple cows if you enable a config option. <br>
+					- You can make zombie, skeletons, creepers and the ender dragon drop their mob heads or disable it with a config option. <br>
+					- You can make the ender dragon place a dragon egg after each death instead of only the first death. <br>
+					- Bug fixes! <br>
+					- <i>Lore intensifies!</i> You can disable tooltips if you want to, they exist now. <br>
+					- Some nice updated textures! <br>
+					- And a lot more!`},{version:"0.9.0.1",mcVersion:"1.16.5",branch:"stable",changelog:`
+                    - Fixed ultimate gear being uncraftable. <br>
+					- Netherite ingots no longer can be used to craft ultimate gear, only platinum can. <br>
+					- Fixed hercules beetle and stink bug animations. <br>
+					- Read 0.9.0.0 changelog.`},{version:"0.9.0.2",mcVersion:"1.16.5",branch:"stable",changelog:`
+                    - Peacock and queen scale boots now cause feather falling only when you press shift. Be advised the slow fall lasts for 3 seconds! <br>
+					- Village mania is now fixed! Go explore some villages and kill some robos. <br>
+					- Dirt no longer spawns in the stalagmite valley biome in the mining paradise. <br>
+					- Ent trees no longer spawn in village mania, crystalworld or mining paradise. <br>
+					- Caves do not spawn in the village mania. <br>
+					- Fixed not being able to start servers with the mod installed. <br>
+					- Read 0.9.0.0 and 0.9.0.1 changelogs.`},{version:"0.9.0.3",mcVersion:"1.16.5",branch:"stable",changelog:`
+                    - Fixed crash when trying to use Royal Guardian Armor on an Anvil. <br>
+					- Fixed crash when attempting to use the Ent Spawn Egg. <br>
+					- Stink bug now gives nausea when attacked. <br>
+					<b>PATCH:</b> <br>
+					- Fixed crash on startup. <br>
+					- Added some tags. Fixes not being able to use custom logs and planks for vanilla recipes that use them like sticks. <br>
+					- Apple Cows can now sometimes spawn with a new fancy texture! Happy Halloween!`},{version:"0.9.0.4",mcVersion:"1.16.5",branch:"stable",changelog:`
+                    <b>Items</b> <br>
+					- Spawn Eggs for the Ents have been separated. Each Ent has its own spawn egg now. <br>
+					- Added the Poppy Sword. Also gives the poison effect. <br>
+					- Poison Sword now gives Confusion. I mean why did it give every effect except the one the mob it came from gives. lol <br>
+					- All foods that give good effects now give bad effects instead. (Except the item below) <br>
+					- Hot Flaming Cheetos have been added to Chaos Awakens. <br> <br>
+					<b>Blocks</b> <br>
+					- Ant Infested Ores now show up as the ore in The One Probe UI instead of the Infested Ores. <br>
+					- Ant Nest Blocks now only spawn ants if a player is nearby and if there aren't many ants nearby. Ant nests don't spawn ants if there is rain on the block above it. Ant Nests spawn more common in Red Ant and Termite Dimensions. <br>
+					- Cherry Cobblestone was added to the mod. IF you light it on fire you get Cherry Fire. <br>
+					- Standing in Cherry Fire or on a Cherry Campfire you get Regeneration and Health Boost. <br>
+					- Cherry Lanterns and Cherry Torches are in the mod. Based on the Cherry Fire. <br>
+					- Separate Fossilised Ent Fossils. There is now a fossil for all 8 Ents. <br> <br>
+					<b>Structures</b> <br>
+					- A structure called the ultimate house has been added to Chaos Awakens. The structure has a basement with some ultimate ores. You could call this an Ultimate Basement. <br> <br>
+					<b>Entities</b> <br>
+					- A feature from the last update that was forgotten in the changelog was that Golden Apple Cows and the Enchanted Golden Apple Cows give off sparkle particle effects. <br>
+					- Apple Cows have new animations now. The Enchanted Golden Apple Cow has a better glint now. <br>
+					- Ants seem to be a little bigger now and drop more exp. <br>
+					- Ants seem to teleport you to the wrong dimension. Oops! who messed up the teleporter. <br>
+					- Ents are 80% cuter. Ents have shrunk to a very small size. <br>
+					- Some villager trades that are in the mod were updated a bit. Wandering Traders, Farmers, Fletchers and Fisherman now give more items. <br> <br>
+					<b>Advancements</b> <br>
+					- Added an Advancement for killing Ants. They seem big enough for an advancement. <br>
+					- Added an Advancement for obtaining the Poppy Sword. Why was the Rose Sword even in Orespawn... <br>
+					- Fixed All Armor Advancement requiring Moth Scale Armour which is unobtainable. <br>
+					- Shiny Cows advancement can now be gotten by breeding Enchanted Golden Apple Cows. <br> <br>
+					<b>Dimensions</b> <br>
+					- Teleporting to the Crystal World now requires an empty inventory. You can disable this in the config. <br> <br>
+					<b>Commands</b> <br>
+					- Added the "/chaosawakens" command. Syntax includes "website", "discord", "github", "wiki", "reddit" and "version". <br> <br>
+					<b>Chat</b> <br>
+					- Typing "April Fools!" in chat will make you drop any items in your inventory. Clumsy!`},{version:"0.10.0.0",mcVersion:"1.16.5",branch:"stable",changelog:`
+                    <b>From April Fools Update | Anything mentioned in the April Fools 0.9.0.4 Changelog but not listed here is not in this version.</b> <br>
+					- Spawn Eggs for the Ents have been separated. Each Ent has its own spawn egg now. <br>
+					- Poison Sword now gives Confusion. I mean why did it give every effect except the one the mob it came from gives. lol <br>
+					- Ant Infested Ores now show up as the ore in The One Probe UI instead of the Infested Ores. <br>
+					- Ant Nest Blocks now only spawn ants if a player is nearby and if there aren't many ants nearby. <br>
+					- Ant Nests do not spawn ants if there is rain on the block above it. <br>
+					- Ant Nests spawn more common in Red Ant and Termite Dimensions. <br>
+					- Separate Fossilised Ent Fossils. There is now a fossil for all 8 Ents. <br>
+					- A feature from the last update that was forgotten in the changelog was that Golden Apple Cows and the Enchanted Golden Apple Cows give off sparkle particle effects. <br>
+					- Apple Cows have new animations now. The Enchanted Golden Apple Cow has a better glint now. <br>
+					- Some villager trades that are in the mod were updated a bit. Wandering Traders, Farmers, Fletchers and Fisherman now give more items. <br>
+					- Fixed All Armor Advancement requiring Moth Scale Armour which is unobtainable. <br>
+					- Shiny Cows advancement can now be gotten by breeding Enchanted Golden Apple Cows. <br>
+					- Teleporting to the Crystal World now requires an empty inventory. You can disable this in the config. Teleporting out of the Crystal Dimension does not require an empty inventory. <br>
+					- Added the "/chaosawakens" command. Syntax includes "website", "discord", "github", "wiki", "reddit" and "version". <br> <br>
+
+					<b>IMPORTANT:</b> <br>
+					- AttributeFix is now required.
+					- Geckolib 3.0.77 is the required version of Geckolib.
+
+					<b>Blocks:</b> <br>
+					- Apple Log and Block of Platinum textures were changed. <br>
+					- Added Skywood and Ginkgo Wood. <br>
+					- Added Buttons, Fences, Fence Gates, Pressure Plates, Signs, Slabs, Stairs and Trapdoors for all woods from this mod. <br>
+					- Peach Leaves now have their colour. Adding colour to the grey things in life. <br>
+					- Added Salt Block. If ants walk on this block they will die. <br>
+					- Added Ruby Ore in Blackstone. This has caused a rename for Nether Ruby Ore to Netherrack Ruby Ore. <br>
+					- Gate Blocks no longer make loud anvil sounds when being dissipated. <br>
+					- Leaves drop their fruit, saplings and sticks now. <br>
+					- Uranium Ore no longer explodes. <br>
+					- Crystal Furnace now requires Crystal Energy to be the fuel source it uses. <br>
+					- Added Gate Blocks for all Vanilla Woods, Chaos Awakens Woods and Mushrooms. <br>
+					- Gate Blocks have a new cool top texture! <br>
+					- Updated Crystalworld Blocks, so they do not X-Ray in the Overworld. They also connect with each other. <br>
+					- Added the Cyan Rose, Red Rose and Paeonia, the nostalgia is strong with this one. <br>
+					- Added Potted Plants for all Chaos Awakens Flowers and Saplings. <br>
+					- Added Radish and Lettuce Plants. <br>
+					- Mining Level to break some Ores and Blocks have been updated. <br>
+					- Gate Blocks and the Nest Blocks in Wasp Nests can now be obtained. <br>
+					- Added Dense Grass Block, Dense Dirt and Dense Red Ant Nest. The Grass Blocks and Ant Nests for the Mining Paradise. <br>
+					- Added Dense Grass, Tall Dense Grass, Thorny Sun, Blue Bulb, Purple Bulb, Pink Bulb. All are Plants for the Mining Paradise. <br>
+					- Added Crystal Grass, Tall Crystal Grass Crystal Growths and Crystal Flowers. <br>
+					- Added Leaf Carpets to all Vanilla and Chaos Awakens Leaf Blocks. <br>
+					- Added Robo Blocks, Lamps and Pillars. (Slabs, Stairs and Walls!) [Unobtainable in Survival] <br>
+					- Added Marble and Limestone and their Polished, Brick (Cracked and Mossy), Pillar and Chiseled variants. (Slabs, Stairs and Walls!) <br>
+					- Added Bricks and Cracked Bricks for all Terracotta Colours. (Slabs, Stairs and Walls!) <br>
+					- Lower DZ Ore Spawning rates in the overworld in case the overworld DZ ores are enabled. <br>
+					- Updated the loot tables of copper, platinum, silver and tin. They no longer just drop their ores. <br> <br>
+
+					<b>Items:</b> <br>
+					- Amethyst, Titanium Ingot and Uranium Ingot textures were changed. <br>
+					- Updated the Ultimate Pickaxe, Ultimate Axe, Ultimate Shovel and Ultimate Bow Textures. <br>
+					- Ultimate Armour Model texture while being worn has been immensely updated. <br>
+					- Queen Scale Armour now has enchantments by default just like Royal Guardian Armour. <br>
+					- Added the Attitude Adjuster. Go EXPLODE some Mobs. <br>
+					- Added the Slayer Chainsaw. Bye, Bye Wood. <br>
+					- Battle Axe, Queen Scale Battleaxe have a new model when held. <br>
+					- Added the Royal Guardian Sword. <br>
+					- Added Mobzilla Scale Armour <br>
+					- Added the Aluminium Nugget. <br>
+					- Added Reach to the Attitude Adjuster, Battle Axe, Big Bertha, Prismatic Reaper, Queen Scale Battle Axe, Royal Guardian Sword and Slayer Chainsaw <br>
+					- Removed Tree Seeds. <br>
+					- Added Water Dragon Scale. <br>
+					- Ultimate Gear Recipes now require Uranium and Titanium from Chaos Awakens and not just the forge:ingots/uranium and forge:ingots/titanium tags. Some other mods have these materials being much easier to get. It was kind of broken lol. <br>
+					- Fixed Glint appearing on pre-enchanted tools after using a grindstone on them. <br>
+					- Removed all Golden Foods except for the Plant ones. Added Golden Beetroot and Golden Baked Potato. <br>
+					- Removed Silver, Gold and Platinum Coins. <br>
+					- Added Venison and Cooked Venison. <br>
+					- Added Crystal Carrots, Crystal Beetroot and Crystal Potatoes. <br>
+					- Ultimate Apple is actually Ultimate now. Texture and Recipe updated. Also Updated its effects. <br>
+					- Emerald Tools now all come pre-enchanted with Silk Touch just like the pickaxe. <br>
+					- Ultimate Stuff comes enchanted with Unbreaking 3 instead of Unbreaking 2. Fixed/Changed other Enchantments as well. <br>
+					- Rock Fish can no longer be eaten. They are still found in the Food Creative Tab. <br>
+					- Nutrition and Saturation have been updated on a bunch of foods. <br>
+					- Mining Level of some tools have been upped. <br>
+					- Ultimate Shovel and Ultimate Axe right click abilities are now also 3x3 just like the Ultimate Hoe. <br>
+					- Added the Critter Cage. It is not throwable, you just right-click the entity. There is an entity tag to blacklist entities from being picked up. The entity tag is "chaosawakens:critter_cage_blacklisted". Shows enchanted if you pick up an enchanted mob. <br>
+					- Miners Dream can now break more blocks. <br>
+					- Added Beetroot on a Stick, Crystal Beetroot on a Stick and Golden Beetroot on a Stick. <br>
+					- Big Hammer not launches entities up based on their knockback resistance. Entities with a high knockback resistance will not go up as far as entities with low knockback resistance. <br> <br>
+
+					<b>Entities:</b> <br>
+					- Added the Bird. Has multiple texture variants. <br>
+					- Added Carrot Pig, Golden Carrot Pig, Enchanted Golden Carrot Pig and Crystal Carrot Pig. You can put a saddle on them and ride them. <br>
+					- Added a Crystal Gator. Has multiple texture variants. <br>
+					- Added the Dimetrodon. Spawns in the Stalagmite Valley. Has multiple texture variants. <br>
+					- Added the Green Fish, Rock Fish, Spark Fish, Wood Fish and Lava Eel. <br>
+					- Added the Frog. Spawns in Swamps. If a frog is named "Froakie" it will become Blue. If a frog is spawned in the nether it will always be a hostile black frog. Has multiple texture variants. <br>
+					- Added the Gazelle. Has multiple texture variants. <br>
+					- Added the Robo Pounder. <br>
+					- Added the Whale. <br>
+					- Added drops for many of the entities above. You can view their drops using Just Enough Resources. <br>
+					- Entities like the Ents, the Hercules Beetle and the Wasp now attack entities back if the entity attacks them first. <br>
+					- Dark Oak Ent now drops a Cornflower. <br>
+					- Jungle Ent can now drop Cocoa Beans. <br>
+					- Fixed Spruce Ent dropping Oak Wood, it also drops Mossy Cobblestone now <br>
+					- Removed vines from Oak Ent Loot Table. <br>
+					- Updated Ent Models and Textures. Fixing various texture stitching issues as well. <br>
+					- Enderman no longer spawn in the Crystal Dimension. <br>
+					- Robo Warrior sometimes shoots Explosives now. <br>
+					- Emerald Gator had a complete model and texture revamp. Also, Baby Emerald Gators can now happen by breeding two adults with any vanilla raw fish. <br>
+					- Robo Entities now have a Layer that glows in the dark. <br>
+					- Wandering Trader can now sell Triffid Goo making Battle Axe and Attitude Adjuster craft-able. <br>
+					- Ants and Termites now die instantly in water. <br>
+					- Ants and Termites now die instantly if they step on salt blocks. <br>
+					- Ants and Termites no longer drop xp. <br>
+					- Updated the message when clicking the Unstable and Brown Ants. It should now be more obvious that these dimensions have not been added yet. <br>
+					- Enchanted Golden Apple Cow and Enchanted Golden Carrot Pig now breed non-enchanted versions if the enchanted animal breeding config is disabled. <br>
+					- Add Wasp Ambient Sound. Protect your ears! <br>
+					- Ranged Robo Entities will try to keep distance from the Player. <br>
+					- All Apple Cow Variants will become their Carrot Pig Variant when struck by lightning. <br>
+					- Robo Entities Only spawn if the block they spawn on can see the sky. (So they do not spawn inside the Mansion) <br>
+					- Rabbits spawn the correct variants in Village Desert (Sandy Coloured One) and Village Snowy (White and White with Black Spot Ones). <br>
+					- A Rabbit named "Oreo" will have a custom texture. Just like the already existing "Toast" Easter egg as well as the "Froakie" Easter egg on the new frog mob. <br>
+					- Illusioner can now also drop a Totem of Undying. <br> <br>
+
+					<b>Fossils:</b> <br>
+					- Added a new block called the Copper Defossilizer. Can only defossilize stone and gravel fossilised mobs. <br>
+					- Added a new block called the Iron Defossilizer. Can defossilize any fossilised, frozen or crystallized mobs. Is 4 times slower than the Copper Defossilizer. <br>
+					- When right-clicking either Defossilizer the Interact with Defossilizer Statistic on the Statistics menu will be increased. <br>
+					- Added a separate Creative Tab for Fossils. Upon launch of the game the icon for the Creative Tab has the chance to be either the Copper Defossilizer or the Iron Defossilizer. <br>
+					- Added a new item called Aluminium Power Chip. <br>
+					- Added Fossils for Many, Many Creatures. Normally going by the name "Fossilized (Mob Name)", If they are in ice it is "Frozen (Mob Name)" and if they are in Kyanite they are "Crystalised (Mob Name)". <br>
+					- Fossils are no longer made into spawn eggs through the Crafting Table. <br>
+					- To get Fossils you must now get a Defossilizer and when opening it you will see 3 input slots and the output slot. <br>
+					- The top input slot is for the fossil. <br>
+					- The bottom left input slot requires a water bucket (lava bucket for nether fossils). <br>
+					- The last input slot requires the Aluminium Power Chip. <br> <br>
+
+					<b>Advancements:</b> <br>
+					- Robo Slayer Advancement now requires killing the Robo Pounder. <br>
+					- Go Fish Advancement now requires killing the Green Fish. <br>
+					- Fixed All Armors Advancement being unobtainable. Moth Scale Armour is no longer required. <br>
+					- Added Advancement for obtaining a Defossilizer. <br> <br>
+
+					<b>Misc:</b> <br>
+					- The /chaosawakens command can now be used with /ca instead. <br>
+					- A new syntax option for the /chaosawakens command is locate. This works like the vanilla locate command but only shows the structures from this mod and without the mod id. You can type /ca locate wasp_dungeon instead of /locate chaosawakens:wasp_dungeon. <br>
+					- Changed enableEnchantedGoldenAppleCowBreeding config option to enableEnchantedAnimalBreeding. <br>
+					- Support for Flammability and Compostability have been added for any items/blocks that need it. <br>
+					- Spawn Eggs can not be used on a Spawner in Survival. There is a Config option to change this. <br>
+					- Made more Blocks/Items into Fuel Sources. <br>
+					- Added Separate Stats for interacting with the Crystal Crafting Table and Crystal Furnace. They no longer use interact with Crafting Table and Furnace Statistics in the Statistics menu. <br>
+					- Attitude Adjuster explosion is customizable in the config just like the Freakin' Ray Gun and Thunder Staff explosions. <br>
+					- Structures can now be disabled with the config. <br> <br>
+
+					<b>World Generation:</b> <br>
+					- Added Bamboo and Cocoa Beans to Jungle Ent Tree Chest Loot. <br>
+					- Stalagmite Valley now spawns giant patches of Andesite and Gravel. <br>
+					- Fixed Stronghold appearing in dimensions. <br>
+					- Villagers are way more common in the Village Mania now. Mansions and Igloos also spawn here sometimes. <br>
+					- Teleporting under bedrock when right-clicking ants should now be fixed. <br>
+					- Corn and Tomato Plants are a bit less common. <br>
+					- Strawberry bushes can spawn in forests. <br>
+					- You can enter the Crystal World with items in your inventory if you are in creative. <br>
+					- Fixed Warped Ent Dungeon containing Water Buckets instead of Lava Buckets in the Trap. <br>
+					- Added Fog and Particles to Crystal World. <br>
+					- The Crystal World was revamped with new plants.
+					- Renamed Mining Biome to Dense Mountain and was completely revamped with new grass and dirt blocks and new plants. You look at this biome at night. It looks beautiful at night. <br>
+					- Mineshafts can now spawn in the Mining Paradise. <br>
+					- Fixed some vegetation in the Village Mania dimension. Acacia Trees actually generate in the Savanna. <br> <br>
+
+					<b>Integration: (All mod names mentioned here have a link to their curseforge page.)</b> <br>
+					- Added Defossilizer compatibility with <a href="https://www.curseforge.com/minecraft/mc-mods/jei">JEI</a> so you can see the recipes. The Defossilizers also have Information pages when viewing the recipes or uses of them. <br>
+					- Added <a href="https://www.curseforge.com/minecraft/mc-mods/the-one-probe">The One Probe</a> compatibility so if you see a mob that has multiple textures The One Probe will say which variant it is and the id associated with the texture. <br>
+					- Ant Infested Ores now show up as the ore they look like while using <a href="https://www.curseforge.com/minecraft/mc-mods/jade">Jade</a>. Just like the support that was added for The One Probe to do this in the April Fools Update. <br>
+					- Added <a href="https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer">Just Enough Resources</a> support for Ore World Generation settings. Ores that are disabled in the config do not show their World Generation Settings. <br>
+					- Items that give effects are now shown in <a href="https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed">Just Enough Effect Descriptions Effects</a> that show up in Just Enough Items if the mod is installed.`},{version:"0.10.0.1",mcVersion:"1.16.5",branch:"stable",changelog:`
+                    - Fixed a critical bug where you would crash if you hit any non-living entity with a weapon that has reach. <br>
+					- Add recipe for the Slayer Chainsaw. <br>
+					- For all the features of 0.10.0.0 see the changelog below this one.`},{version:"0.10.0.2",mcVersion:"1.16.5",branch:"stable",changelog:`				
+            - Fixed Critter Cage Default Filled Texture. <br>
+			- Reverted the Uranium Texture to the old better one. <br>
+			- Fixed a crash on servers with the extended reach tools.`},{version:"0.1",mcVersion:"1.16.5",branch:"alpha",changelog:`
+                    - Added Emerald Sword, Pickaxe, Shovel, Axe and Hoe. <br>
+                    - Added Emerald Helmet, Chestplate, Leggings and Boots. <br>
+					- Added Amethyst and Ruby. <br>
+					- Added Untextured Tigers Eye, Titanium, Titanium Nugget, Uranium, Uranium Nugget and Aluminium. <br>
+					- Added Untextured Ruby Block, Tigers Eye Block, Titanium Block, Uranium Block, Aluminium Block.`},{version:"0.2",mcVersion:"1.16.5",branch:"alpha",changelog:`
+                    - Added Amethyst Ore, Ruby Ore. <br>
+					- Added Untextured Tigers Eye Ore, Titanium Ore, Uranium Ore and Aluminium Ore. <br>
+					- Added Amethyst Sword, Pickaxe, Shovel, Axe and Hoe. <br>
+					- Added Amethyst Helmet, Chestplate, Leggings and Boots. <br>
+					- Added Ruby Sword, Pickaxe, Shovel, Axe and Hoe. <br>
+					- Added Untextured Ruby Helmet, Chestplate, Leggings and Boots. <br>
+					- Added Untextured Tigers Eye Sword, Pickaxe, Shovel, Axe and Hoe. <br>
+					- Added Untextured Tigers Eye Helmet, Chestplate, Leggings and Boots.`},{version:"0.3",mcVersion:"1.16.5",branch:"alpha",changelog:`
+                    - Added Titanium Ore and Uranium Ore Textures. <br>
+					- Added Amethyst Block, Ruby Block, Titanium Block and Uranium Block Textures. <br>
+					- Added Titanium Ingot and Uranium Ingot Textures. <br>
+					- Added Titanium Nugget and Uranium Nugget Textures. <br>
+					- Added Ruby Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Updated Amethyst and Ruby Textures. <br>
+					- Updated Amethyst Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Updated Amethyst Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Updated Ruby Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Updated Emerald Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Updated Emerald Helmet, Chestplate, Leggings and Boots Textures.`},{version:"0.4",mcVersion:"1.16.5",branch:"alpha",changelog:`
+                    - Added Aluminium Ore Textures. <br>
+					- Added Tigers Eye Block and Aluminium Block Textures. <br>
+					- Added Cooked Corndog, Raw Corndog, Cooked Bacon and Raw Bacon. <br>
+					- Added Corn, Tomato, Lettuce, Cheese, Garden Salad and BLT. <br>
+					- Added Aluminium Ingot Textures. <br>
+					- Added Tigers Eye Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Ultimate Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Ultimate Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Thunder Staff. <br>
+					- Added Tigers Eye Texture. <br>
+					- Fixed Titanium, Uranium and Aluminium not having Ingot in their names.`},{version:"0.5",mcVersion:"1.16.5",branch:"beta",changelog:`
+                    - Added Ent. <br>
+					- Added Tigers Eye Ore Texture. <br>
+					- Added Tigers Eye Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Updated Tigers Eye Block, Titanium Block, Uranium Block and Aluminium Block Textures. <br>
+					- Updated Titanium Ingot, Uranium Ingot and Aluminium Ingot Textures. <br>
+					- Updated Titanium Nugget, Uranium Nugget Textures. <br>
+					- Updated Tigers Eye Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Updated Tigers Eye Texture.`},{version:"0.6",mcVersion:"1.16.5",branch:"beta",changelog:`
+                    - Added Experience Sword. <br>
+					- Added Experience Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Auto Enchants to Ultimate Set and Emerald Pickaxe.`},{version:"0.7",mcVersion:"1.16.5",branch:"beta",changelog:`
+                    - Added Creative Tabs. <br>
+					- Added Cooked Peacock Leg, Raw Peacock Leg, Cooked Crab Meat and Raw Crab Meat. <br>
+					- Added Strawberry, Peach, Radish, Radish Stew, Cherries Butter and Salt. <br>
+					- Added Green Fish, Rock Fish, Wood Fish, Spark Fish and Lava Eel. <br>
+					- Added Strawberry Seeds, Cherry Seeds, Apple Tree Seeds, Peach Seeds, Corn Seeds, Lettuce Seeds and Radish Seeds. <br>
+					- Added Ultimate Bow. <br>
+					- Added Nightmare Sword, Poison Sword, Rat Sword, Fairy Sword and Big Hammer. <br>
+					- Added Prismatic Reaper. <br>
+					- Added Salt Ore, Red Ant Infested Ore and Termite Infested Ore. <br>
+					- Added Fossilised Ent, Fossilised Hercules Beetle, Fossilised Ruby Bug, Fossilised Emerald Gator. <br>
+					- Added Gate Block and Ent Dungeon Wood. <br>
+					- Added Ent Dungeon. <br>
+					- Added Ent, Red Ant, Brown Ant, Rainbow Ant, Unstable Ant, Termite, Hercules Beetle, Ruby Bug, Emerald Gator, Robo Sniper, Beaver, Apple Cow and Golden Apple Cow. <br>
+					- Added Iron Golem and Snow Golem Spawn Eggs. <br>
+					- Added Ant Nests and Termite Nests. (UNUSED) <br>
+					- Updated Cooked Corndog, Raw Corndog, Cooked Bacon and Raw Bacon Textures. <br>
+					- Updated Corn, Tomato, Lettuce, Cheese and BLT Textures. <br>
+					- Updated Ultimate Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Updated Lava Eel Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Updated Lapis Lazuli Helmet, Chestplate, Leggings and Boots Textures.`},{version:"0.7b",mcVersion:"1.16.5",branch:"beta",changelog:"<u><b>UNKNOWN CHANGES</b></u>"},{version:"0.8",mcVersion:"1.16.5",branch:"beta",changelog:`
+                    - Updated Amethyst Ore and Ruby Ore Textures. <br>
+					- Added Copper Ore, Tin Ore, Silver Ore, Platinum Ore, Sunstone Ore and Bloodstone Ore. <br>
+					- Added Copper Block, Tin Block, Silver Block, Platinum Block, Sunstone Block and Bloodstone Block. <br>
+					- Added Pink Tourmaline Block, Cat's Eye Block, Crystal Grass Block, Kyanite Block. <br>
+					- Added Pink Tourmaline Cluster, Cat's Eye Cluster and Crystal Energy. <br>
+					- Added Budding Pink Tourmaline and Budding Cat's Eye <br>
+					- Added Crystal Log, Crystal Wood, Crystal Wood Planks, Red Crystal Leaves, Green Crystal Leaves and Yellow Crystal Leaves. <br>
+					- Added Crystal Crafting Table and Crystal Furnace. <br>
+					- Added Crystal Apple. <br>
+					- Added Golden Foods. <br>
+					- Added Candy Cane and Ultimate Apple. <br>
+					- Added Copper Lump, Tin Lump, Silver Lump and Platinum Lump. <br>
+					- Added Pink Tourmaline Ingot and Cat's Eye Ingot. <br>
+					- Added Pink Tourmaline Nugget and Cat's Eye Nugget. <br>
+					- Added Dead Irukandji, Peacock Feather and Crystal Wood Shard. <br>
+					- Added Irukandji Arrow, Skate String Bow and A Freakin' Ray Gun. <br>
+					- Added Crystal Torch and Sunstone Torch. <br>
+					- Added Copper Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Copper Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Tin Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Tin Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Silver Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Silver Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Platinum Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Platinum Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Peacock Feather Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Crystal Wood Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Kyanite Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Pink Tourmaline Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Pink Tourmaline Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Cat's Eye Sword, Pickaxe, Shovel, Axe and Hoe Textures. <br>
+					- Added Cat's Eye Helmet, Chestplate, Leggings and Boots Textures. <br>
+					- Added Instant Survival Shelter. <br>
+					- Added Extra Small Zoo Cage, Small Zoo Cage, Medium Zoo Cage, Large Zoo Cage and Extra Large Zoo Cage. <br>
+					- Added Robo Warrior, Enchanted Golden Apple Cow and Crystal Apple Cow. <br>
+					- Ant Nests and Termite Nests now have Biome Dependent coloring. <br>
+					- Item and Food Creative Tabs are now separate. <br>
+					- Removed Ent Dungeon Wood.`},{version:"0.8b",mcVersion:"1.16.5",branch:"beta",changelog:"<u><b>UNKNOWN CHANGES</b></u>"},{version:"0.8c",mcVersion:"1.16.5",branch:"beta",changelog:"- Added Extreme Torch."},{version:"0.8d",mcVersion:"1.16.5",branch:"beta",changelog:"- Added Random Teleport Block."}];return e.sort(Zn),e.sort((t,n)=>t.branch>n.branch?1:n.branch>t.branch?-1:0).reverse(),[e]}class rs extends yt{constructor(e){super(),Tt(this,e,Kn,Jn,St,{})}}export{rs as default};
