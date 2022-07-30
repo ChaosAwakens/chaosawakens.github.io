@@ -54,7 +54,7 @@ import{S as yt,i as Tt,s as St,x as Rt,a as me,l as F,u as O,y as Ct,c as be,m a
 					<b>PATCH:</b> <br>
 					- Fixed crash on startup. <br>
 					- Added some tags. Fixes not being able to use custom logs and planks for vanilla recipes that use them like sticks. <br>
-					- Apple Cows can now sometimes spawn with a new fancy texture! Happy Halloween!`},{version:"0.9.0.4",mcVersion:"1.16.5",branch:"stable",changelog:`
+					- Apple Cows can now sometimes spawn with a new fancy texture! Happy Halloween!`},{version:"0.9.0.4 (April Fools Update)",mcVersion:"1.16.5",branch:"stable",changelog:`
                     <b>Items</b> <br>
 					- Spawn Eggs for the Ents have been separated. Each Ent has its own spawn egg now. <br>
 					- Added the Poppy Sword. Also gives the poison effect. <br>
@@ -258,7 +258,7 @@ import{S as yt,i as Tt,s as St,x as Rt,a as me,l as F,u as O,y as Ct,c as be,m a
 					- Items that give effects are now shown in <a href="https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed">Just Enough Effect Descriptions Effects</a> that show up in Just Enough Items if the mod is installed.`},{version:"0.10.0.1",mcVersion:"1.16.5",branch:"stable",changelog:`
                     - Fixed a critical bug where you would crash if you hit any non-living entity with a weapon that has reach. <br>
 					- Add recipe for the Slayer Chainsaw. <br>
-					- For all the features of 0.10.0.0 see the changelog below this one.`},{version:"0.10.0.2",mcVersion:"1.16.5",branch:"stable",changelog:`				
+					- For all the features of 0.10.0.0 see the changelog below this one.`},{version:"0.10.0.2",mcVersion:"1.16.5",branch:"stable",changelog:`
             - Fixed Critter Cage Default Filled Texture. <br>
 			- Reverted the Uranium Texture to the old better one. <br>
 			- Fixed a crash on servers with the extended reach tools.`},{version:"0.1",mcVersion:"1.16.5",branch:"alpha",changelog:`
