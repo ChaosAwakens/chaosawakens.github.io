@@ -6,33 +6,31 @@
 
 <div class="content">
     <h1>What is Chaos Awakens?</h1>
-
-    <p>Chaos Awakens is a remaster of both the very iconic mod OreSpawn and SoulsOfTheFallen's Chaos Awakens mod pack, built from the ground up.</p>
+    <p>
+        Chaos Awakens is a remaster of both the very iconic mod OreSpawn and SoulsOfTheFallen's Chaos Awakens mod pack, built from the ground up.
+    </p>
 
     <h1>Why does Chaos Awakens exists?</h1>
+    <p>
+        The Chaos Awakens project was created after the 1.12.2 OreSpawn update was cancelled. The staff of the DangerZone Modding Discord decided to start their own version of the mod and found some people wanting to help. These people were some extremely talented Coders, Modelers, Texturers and more.
+    </p>
 
-    <p>The Chaos Awakens project was created after the 1.12.2 OreSpawn update was cancelled. The staff of the DangerZone Modding Discord decided to start their own version of the mod and found some people wanting to help. These people were some extremely talented Coders, Modelers, Texturers and more.</p>
-
-    <h1>Where do I download it?</h1>
-
+    <h1>Where do I download Chaos Awakens?</h1>
     <p>
         You can find the mod releases <a href="/downloads">Here.</a>
     </p>
 
-    <h1>Where can I found the mod source code?</h1>
-
+    <h1>Where can I find the source code of the Chaos Awakens mod?</h1>
     <p>
         <a href="https://github.com/chaosawakens">Right here!</a>
     </p>
 
-    <h1>Do Chaos Awakens has a Discord server?</h1>
-
+    <h1>Does Chaos Awakens have a Discord server?</h1>
     <p>
         <a href="https://discord.gg/chaosawakens">discord.gg/chaosawakens</a>
     </p>
 
-    <h1>Our current development team:</h1>
-
+    <h1>The Current Chaos Awakens Development Team:</h1>
     <p>
         <strong>Project Leads:</strong> Funky Monk, WeirdNerd, 𝒯𝟦☯𝓃𝑒™<br>
         <strong>Organizers:</strong> Phwee, VDA Spoop<br>
