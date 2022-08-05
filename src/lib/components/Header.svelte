@@ -19,7 +19,7 @@
                     name: "About",
                 },
                 {
-                    link: "https://discord.gg/chaosawakens",
+                    link: "https://discord.gg/9dFVHCWj9v",
                     name: "Discord",
                     target: "_blank"
                 },
