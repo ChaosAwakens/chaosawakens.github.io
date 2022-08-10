@@ -19,7 +19,7 @@
                     name: "About",
                 },
                 {
-                    link: "https://discord.gg/9dFVHCWj9v",
+                    link: "https://discord.gg/hnCKD4M87R",
                     name: "Discord",
                     target: "_blank"
                 },
