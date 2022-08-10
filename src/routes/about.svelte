@@ -28,7 +28,7 @@
     <h1>Does Chaos Awakens have a Discord server?</h1>
     <p>
         
-        You can find the discord <a href="https://discord.gg/9dFVHCWj9v">Here.</a>
+        You can find the discord <a href="https://discord.gg/hnCKD4M87R">Here.</a>
     </p>
 
     <h1>The Current Chaos Awakens Development Team:</h1>
