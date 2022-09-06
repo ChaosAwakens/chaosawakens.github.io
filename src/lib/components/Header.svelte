@@ -24,6 +24,11 @@
                     target: "_blank"
                 },
                 {
+                    link: "https://chaos-awakens.fandom.com/wiki/Chaos_Awakens_Wiki",
+                    name: "Wiki",
+                    target: "_blank"
+                },
+                {
                     link: "https://github.com/chaosawakens",
                     name: "GitHub",
                     target: "_blank"
