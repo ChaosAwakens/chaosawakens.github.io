@@ -33,7 +33,7 @@
 
     <h1>The Current Chaos Awakens Development Team:</h1>
     <p>
-        <strong>Our Leads are:</strong> Funky Monk, WeirdNerd, and 𝒯𝟦☯𝓃𝑒™<br>
+        <strong>Our Project Leads are:</strong> Funky Monk, WeirdNerd, and 𝒯𝟦☯𝓃𝑒™<br>
         <strong>Our Organizers are:</strong> Phwee, and VDA Spoop<br>
         <strong>Our Animators are:</strong> Absolute Kun, Aqu, Pugman665544, Skarrier, and SnakeMaster<br>
         <strong>Our Builders are:</strong> Funky Monk, Blackout, Meme Man, omarboi, Phwee, Skarrier, TheLoneCyberman, and Unanimous<br>
