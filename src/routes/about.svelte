@@ -33,14 +33,14 @@
 
     <h1>The Current Chaos Awakens Development Team:</h1>
     <p>
-        <strong>Our Leads are:</strong> Funky Monk, WeirdNerd, 𝒯𝟦☯𝓃𝑒™<br>
-        <strong>Our Organizers are:</strong> Phwee, VDA Spoop<br>
-        <strong>Our Animators are:</strong> Absolute Kun, Aqu, Pugman665544, Skarrier, SnakeMaster<br>
-        <strong>Our Builders are:</strong> Funky Monk, Blackout, Meme Man, omarboi, Phwee, Skarrier, TheLoneCyberman, Unanimous<br>
-        <strong>Our Coders are:</strong> Blackout, LuisRandomness, Meme Man, WeirdNerd<br>
-        <strong>Our Modelers are:</strong> Absolute Kun, Memer Teamer, Pugman665544, Renato, Skarrier, SnakeMaster, TheLoneCyberman, 𝒯𝟦☯𝓃𝑒™<br>
-        <strong>Our Sound Designers are:</strong> Skarrier, WeirdNerd<br>
-        <strong>Our Texturers:</strong> Absolute Kun, LuisRandomness, Memer Teamer, Renato, Santispik3, Skarrier, SnakeMaster, TheLoneCyberman, VDA Spoop, 𝒯𝟦☯𝓃𝑒™<br><br>
+        <strong>Our Leads are:</strong> Funky Monk, WeirdNerd, and 𝒯𝟦☯𝓃𝑒™<br>
+        <strong>Our Organizers are:</strong> Phwee, and VDA Spoop<br>
+        <strong>Our Animators are:</strong> Absolute Kun, Aqu, Pugman665544, Skarrier, and SnakeMaster<br>
+        <strong>Our Builders are:</strong> Funky Monk, Blackout, Meme Man, omarboi, Phwee, Skarrier, TheLoneCyberman, and Unanimous<br>
+        <strong>Our Coders are:</strong> Blackout, LuisRandomness, Meme Man, and WeirdNerd<br>
+        <strong>Our Modelers are:</strong> Absolute Kun, Memer Teamer, Pugman665544, Renato, Skarrier, SnakeMaster, TheLoneCyberman, and 𝒯𝟦☯𝓃𝑒™<br>
+        <strong>Our Sound Designers are:</strong> Skarrier, and WeirdNerd<br>
+        <strong>Our Texturers:</strong> Absolute Kun, LuisRandomness, Memer Teamer, Renato, Santispik3, Skarrier, SnakeMaster, TheLoneCyberman, VDA Spoop, and 𝒯𝟦☯𝓃𝑒™<br><br>
         Website made by <a href="https://github.com/maizenalegal">Maizena! 🇧🇷</a>
     </p>
 </div>
