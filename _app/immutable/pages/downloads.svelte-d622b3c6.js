@@ -376,7 +376,7 @@ import{S as yt,i as Tt,s as St,x as kt,a as me,l as G,u as O,y as Rt,c as fe,m a
                                 - Updated Poison Sword texture.<br>
                                 - Re-balanced some ore-generation.<br>
                                 - Reduced Dimetrodon spawn rates.<br>
-                                - Added new Lettuce Chicken throwable egg.<br>`},{version:"0.1",mcVersion:"1.16.5",branch:"alpha",changelog:`
+                                - Added new Lettuce Chicken throwable egg.`},{version:"0.1",mcVersion:"1.16.5",branch:"alpha",changelog:`
                     - Added Emerald Sword, Pickaxe, Shovel, Axe and Hoe. <br>
                     - Added Emerald Helmet, Chestplate, Leggings and Boots. <br>
 					- Added Amethyst and Ruby. <br>
