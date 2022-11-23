@@ -28,6 +28,11 @@
                     name: "GitHub",
                     target: "_blank"
                 },
+                {
+                    link: "https://www.curseforge.com/minecraft/mc-mods/chaos-awakens",
+                    name: "Curseforge",
+                    target: "_blank"
+                },
             ]
         }
     />
