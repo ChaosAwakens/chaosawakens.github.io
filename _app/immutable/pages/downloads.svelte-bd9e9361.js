@@ -276,6 +276,7 @@ import{S as Et,i as Tt,s as St,x as kt,a as fe,l as G,u as O,y as Rt,c as me,m a
 				- Added more compatibility between Vanilla Minecraft and CA (for example, crops and seeds added by CA are now compostable, dispensers properly shoot arrows added by CA, etc.).<br>
 				- Added a new "Screen Shake" effect, which triggers during certain events.<br>
 				- Auto-enchantable items no longer fail to enchant when crafted using shift-click.<br>
+				- Added 16 new paintings.
 <br>
 				ITEMS:<br>
 				- Fixed right clicking with an extended reach item/weapon killing villagers. You can no longer interact with villagers if you hold an extended reach weapon.<br>
@@ -355,7 +356,7 @@ import{S as Et,i as Tt,s as St,x as kt,a as fe,l as G,u as O,y as Rt,c as me,m a
 				- All other entities will be updated and overhauled in future patches/major updates.<br>
 <br>
 				WORLD GENERATION:<br>
-				- Overhauled the Acacia, Birch, Dark Oak, Jungle.<br>
+				- Overhauled the Acacia, Birch, Dark Oak, Jungle Ent Trees.<br>
 				- Added a new type of Wasp Nest - the Giant "Mining" Wasp Nest. This Wasp Nest can be found within the Stalagmite Valley in Mining Paradise.<br>
 				- Reworked Mining Paradise - the Stalagmite Valley now features better cave generation and giant stalagmites, while the Dense Mountains have significantly increased in size.<br>
 				- Tweaked spawn rates in Mining Paradise and Village Mania.<br>
