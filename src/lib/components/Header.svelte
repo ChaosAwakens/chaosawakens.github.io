@@ -38,6 +38,11 @@
                     name: "Curseforge",
                     target: "_blank"
                 },
+                {
+                    link: "https://modrinth.com/mod/chaos-awakens",
+                    name: "Modrinth",
+                    target: "_blank"
+                },
             ]
         }
     />
