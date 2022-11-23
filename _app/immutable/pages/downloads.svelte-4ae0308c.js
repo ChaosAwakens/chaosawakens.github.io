@@ -364,17 +364,18 @@ import{S as yt,i as Tt,s as St,x as kt,a as me,l as G,u as O,y as Rt,c as fe,m a
 				- Added a config option for enabling/disabling ore generation on stalagmites, as it is still quite unoptimized and thus may require a more powerful computer due to the server thread lagging/freezing.<br>
 				- Reworked tree generation for Apple, Cherry, and Peach trees. They now look a little nicer, and are a bit bigger.<br>
 				- Tweaked some ore spawning rates.`},{version:"0.11.0.1",mcVersion:"1.16.5",branch:"stable",changelog:`
-				PATCH NOTES:<br>
-                                - Fixed a crash with Ender Dragon Scale Armor being worn on other mobs and armor stands.
-                                - Fixed Ender Dragon Scale Armor Scale Armor freezing server thread.
-                                - Fixed some slight AI inconsistencies.
-                                - Fixed a mobs with extended reach weapons/items crashing the game.
-                                - Fixed a visual bug where the Extreme Torch wouldn't render.
-                                - Fixed a crash with the Hercules Beetle.
-                                - Added Throwback variant for the Hercules Beetle. The Modern Hercules Beetle will now only spawn in the Dense Mountains, in Mining Paradise, whereas the Throwback Hercules Beetle will spawn on normal Overworld Mountains.
-                                - Updated Poison Sword texture.
-                                - Re-balanced some ore-generation.
-                                - Reduced Dimetrodon spawn rates.
+				PATCH NOTES:<br>+
+				- Bumped required Geckolib version up to 3.0.92.<br>
+                                - Fixed a crash with Ender Dragon Scale Armor being worn on other mobs and armor stands.<br>
+                                - Fixed Ender Dragon Scale Armor Scale Armor freezing server thread.<br>
+                                - Fixed some slight AI inconsistencies.<br>
+                                - Fixed a mobs with extended reach weapons/items crashing the game.<br>
+                                - Fixed a visual bug where the Extreme Torch wouldn't render.<br>
+                                - Fixed a crash with the Hercules Beetle.<br>
+                                - Added Throwback variant for the Hercules Beetle. The Modern Hercules Beetle will now only spawn in the Dense Mountains, in Mining Paradise, whereas the Throwback Hercules Beetle will spawn on normal Overworld Mountains.<br>
+                                - Updated Poison Sword texture.<br>
+                                - Re-balanced some ore-generation.<br>
+                                - Reduced Dimetrodon spawn rates.<br>
                                 - Added new Lettuce Chicken throwable egg.<br>`},{version:"0.1",mcVersion:"1.16.5",branch:"alpha",changelog:`
                     - Added Emerald Sword, Pickaxe, Shovel, Axe and Hoe. <br>
                     - Added Emerald Helmet, Chestplate, Leggings and Boots. <br>
