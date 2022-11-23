@@ -364,7 +364,7 @@ import{S as yt,i as Tt,s as St,x as kt,a as me,l as G,u as O,y as Rt,c as fe,m a
 				- Added a config option for enabling/disabling ore generation on stalagmites, as it is still quite unoptimized and thus may require a more powerful computer due to the server thread lagging/freezing.<br>
 				- Reworked tree generation for Apple, Cherry, and Peach trees. They now look a little nicer, and are a bit bigger.<br>
 				- Tweaked some ore spawning rates.`},{version:"0.11.0.1",mcVersion:"1.16.5",branch:"stable",changelog:`
-				PATCH NOTES:<br>+
+				PATCH NOTES:<br>
 				- Bumped required Geckolib version up to 3.0.92.<br>
                                 - Fixed a crash with Ender Dragon Scale Armor being worn on other mobs and armor stands.<br>
                                 - Fixed Ender Dragon Scale Armor Scale Armor freezing server thread.<br>
