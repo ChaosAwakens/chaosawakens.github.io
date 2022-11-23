@@ -429,7 +429,7 @@
             mcVersion: '1.16.5',
             branch: 'stable',
             changelog: `
-				PATCH NOTES:<br>+
+				PATCH NOTES:<br>
 				- Bumped required Geckolib version up to 3.0.92.<br>
                                 - Fixed a crash with Ender Dragon Scale Armor being worn on other mobs and armor stands.<br>
                                 - Fixed Ender Dragon Scale Armor Scale Armor freezing server thread.<br>
