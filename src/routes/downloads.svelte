@@ -424,6 +424,24 @@
 				- Reworked tree generation for Apple, Cherry, and Peach trees. They now look a little nicer, and are a bit bigger.<br>
 				- Tweaked some ore spawning rates.`
         },
+	    {
+            version: '0.11.0.1',
+            mcVersion: '1.16.5',
+            branch: 'stable',
+            changelog: `
+				PATCH NOTES:<br>
+                                - Fixed a crash with Ender Dragon Scale Armor being worn on other mobs and armor stands.
+                                - Fixed Ender Dragon Scale Armor Scale Armor freezing server thread.
+                                - Fixed some slight AI inconsistencies.
+                                - Fixed a mobs with extended reach weapons/items crashing the game.
+                                - Fixed a visual bug where the Extreme Torch wouldn't render.
+                                - Fixed a crash with the Hercules Beetle.
+                                - Added Throwback variant for the Hercules Beetle. The Modern Hercules Beetle will now only spawn in the Dense Mountains, in Mining Paradise, whereas the Throwback Hercules Beetle will spawn on normal Overworld Mountains.
+                                - Updated Poison Sword texture.
+                                - Re-balanced some ore-generation.
+                                - Reduced Dimetrodon spawn rates.
+                                - Added new Lettuce Chicken throwable egg.<br>`
+        },
 
         //ALPHA
 
