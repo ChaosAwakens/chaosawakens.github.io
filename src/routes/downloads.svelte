@@ -420,8 +420,8 @@
 				- Tweaked spawn rates in Mining Paradise and Village Mania.<br>
 				- Added new variants for the crystal trees inside Crystal World, each featuring a set of new blocks corresponding to each new color/variant.<br>
 				- Added a config option for enabling/disabling ore generation on stalagmites, as it is still quite unoptimized and thus may require a more powerful computer due to the server thread lagging/freezing.<br>
-				- Reworked tree generation for Apple, Cherry, and Peach trees. They now look a little nicer, and are a bit bigger.<br><br>
-				- Tweaked some ore spawning rates.`<br>
+				- Reworked tree generation for Apple, Cherry, and Peach trees. They now look a little nicer, and are a bit bigger.<br>
+				- Tweaked some ore spawning rates.`
         },
 
         //ALPHA
