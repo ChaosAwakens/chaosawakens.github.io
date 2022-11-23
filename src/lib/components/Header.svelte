@@ -19,8 +19,13 @@
                     name: "About",
                 },
                 {
-                    link: "https://discord.gg/chaosawakens",
+                    link: "https://discord.gg/hnCKD4M87R",
                     name: "Discord",
+                    target: "_blank"
+                },
+                {
+                    link: "https://chaos-awakens.fandom.com/wiki/Chaos_Awakens_Wiki",
+                    name: "Wiki",
                     target: "_blank"
                 },
                 {
