@@ -441,7 +441,7 @@
                                 - Updated Poison Sword texture.<br>
                                 - Re-balanced some ore-generation.<br>
                                 - Reduced Dimetrodon spawn rates.<br>
-                                - Added new Lettuce Chicken throwable egg.<br>`
+                                - Added new Lettuce Chicken throwable egg.`
         },
 
         //ALPHA
