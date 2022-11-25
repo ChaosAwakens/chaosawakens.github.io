@@ -655,7 +655,7 @@
 <Title title='Downloads'/>
 
 <h3>
-	<a href="https://www.curseforge.com/minecraft/mc-mods/geckolib/">GeckoLib</a> and <a href="https://www.curseforge.com/minecraft/mc-mods/attributefix">AttributeFix</a> are required for the mod to function!
+	<a href="https://www.curseforge.com/minecraft/mc-mods/geckolib/">GeckoLib</a> and <a href="https://www.curseforge.com/minecraft/mc-mods/attributefix">AttributeFix(for versions 0.10.0.2 and below)</a> are required for the mod to function!
 </h3>
 
 <div class="versions">
