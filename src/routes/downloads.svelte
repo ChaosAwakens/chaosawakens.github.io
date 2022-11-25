@@ -432,7 +432,7 @@
 				PATCH NOTES:<br>
 				- Bumped required Geckolib version up to 3.0.92.<br>
                                 - Fixed a crash with Ender Dragon Scale Armor being worn on other mobs and armor stands.<br>
-                                - Fixed Ender Dragon Scale Armor Scale Armor freezing server thread.<br>
+                                - Fixed Ender Dragon Scale Armor freezing server thread.<br>
                                 - Fixed some slight AI inconsistencies.<br>
                                 - Fixed a mobs with extended reach weapons/items crashing the game.<br>
                                 - Fixed a visual bug where the Extreme Torch wouldn't render.<br>
