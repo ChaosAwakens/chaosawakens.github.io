@@ -12,7 +12,7 @@
 
     <h1>Why does Chaos Awakens exist?</h1>
     <p>
-        The Chaos Awakens project was created after the 1.12.2 OreSpawn update was cancelled. The staff of the DangerZone Modding Discord decided to start their own version of the mod and found some people wanting to help. These people were some extremely talented Coders, Modelers, Texturers and more.
+        Chaos Awakens extends the current experience of the game. Chaos Awakens adds/or will add more bosses, armors, weapons, tools, dimensions, dungeons and so much more! With all this being said, we aim to bring a crazy experience into Minecraft. Currently, the mod is in beta and is still expanding. Chaos Awakens is a spiritually inspired by OreSpawn but we will be revamping ideas while creating everything for the mod with zero reused assets from OreSpawn!
     </p>
 
     <h1>Where do I download Chaos Awakens?</h1>
