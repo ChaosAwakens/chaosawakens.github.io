@@ -476,15 +476,15 @@
 					- Added a specific advancement for obtaining each Rose Sword. Seriously though... WHY did the sword even exist in Orespawn... <br>
 					<b>World Generation</b> <br>
 					- Changed Ore Spawning of multiples ores. <br>
-					    - Amethyst now spawns in geodes underground. <br>
-					    - Aluminium now spawns in the Overworld. It spawns between y20 and y80. <br>
-					    - Ruby Ore spawning in the Nether has had its values tweaked. <br>
-					    - Aluminium, Copper, Tin and Salt Ore spawning in the Mining Paradise have had their values tweaked. <br>
-					    - Crystal Energy spawning in the Crystal World has had its values tweaked. <br>
-					    - Cat's Eye and Pink Tourmaline also spawn in geodes in the Crystal World. <br>
+					- Amethyst now spawns in geodes underground. <br>
+					- Aluminium now spawns in the Overworld. It spawns between y20 and y80. <br>
+					- Ruby Ore spawning in the Nether has had its values tweaked. <br>
+					- Aluminium, Copper, Tin and Salt Ore spawning in the Mining Paradise have had their values tweaked. <br>
+					- Crystal Energy spawning in the Crystal World has had its values tweaked. <br>
+					- Cat's Eye and Pink Tourmaline also spawn in geodes in the Crystal World. <br>
 					<b>Chat</b> <br>
-					- Typing "April Fools!" in chat will make you drop any items in your inventory. Clumsy!` <br> <br>
-					<b>DISCLAIMER:</b> Some of these features are from last years April Fools update with or without some changes.
+					- Typing "April Fools!" in chat will make you drop any items in your inventory. Clumsy! <br> <br>
+					<b>DISCLAIMER:</b> Some of these features are from last years April Fools update with or without some changes.`
         }
 
         //ALPHA
