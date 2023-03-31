@@ -485,7 +485,7 @@
 					<b>Chat</b> <br>
 					- Typing "April Fools!" in chat will make you drop any items in your inventory. Clumsy! <br> <br>
 					<b>DISCLAIMER:</b> Some of these features are from last years April Fools update with or without some changes.`
-        }
+        },
 
         //ALPHA
 
