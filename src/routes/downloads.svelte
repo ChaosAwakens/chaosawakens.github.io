@@ -494,6 +494,14 @@
                     <b>Servers</b> <br>
                     - Fixes crash on servers.`
         },
+        {
+            version: '0.11.1.2 (April Fools Update)',
+            mcVersion: '1.16.5',
+            branch: 'stable',
+            changelog: `
+                    <b>Servers</b> <br>
+                    - Fixes ANOTHER crash on servers that did not happen in my dev environment server...`
+        },
 
         //ALPHA
 
