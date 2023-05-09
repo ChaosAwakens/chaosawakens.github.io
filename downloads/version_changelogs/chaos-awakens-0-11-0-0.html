@@ -1,0 +1,104 @@
+﻿<p>
+	<b>IMPORTANT:</b> <br>
+	- Geckolib version 3.0.90 or above is now required.<br>
+	- AttributeFix is no longer required.<br>
+	<br>
+	<b>General:</b> <br>
+	- Expanded the config. Many more options have been added to the common and client config, and there is now also a server config (Which is still a W.I.P).<br>
+	- Added 2 new effects - Paralysis and Burns (W.I.P). <br>
+	- Added a new enchantment - Ignition (W.I.P).<br>
+	- Added many new advancements, some with XP rewards being bestowed upon completion.<br>
+	- Miner's dream now breaks 45 blocks when used, and has a 20 tick (1 second) use cooldown.<br>
+	- Added durability tooltips (enabled in the client config by default).<br>
+	- Added more compatibility between Vanilla Minecraft and CA (for example, crops and seeds added by CA are now compostable, dispensers properly shoot arrows added by CA, etc.).<br>
+	- Added a new "Screen Shake" effect, which triggers during certain events.<br>
+	- Auto-enchantable items no longer fail to enchant when crafted using shift-click.<br>
+	- Added 16 new paintings.
+	<br>
+	<b>Items:</b> <br>
+	- Fixed right clicking with an extended reach item/weapon killing villagers. You can no longer interact with villagers if you hold an extended reach weapon.<br>
+	- Added some more Critter Cage textures, as well as better support for caging interactable entities (such as villagers, or tameable mobs).<br>
+	- Added 5 new armor set bonuses - "Experienced" (Experience Armor), "Merchant's Aura" (Emerald Armor), "Enchanter's Delight" (Lapis Armor) (W.I.P), "Dragon Wings" (Ender Dragon Scale Armor) (W.I.P), and "Eel-Like" (Lava Eel Armor) (W.I.P). Each of these can be tweaked down to every nook and cranny in the common config. You can see their effects in detail using the in-game tooltips. The Ender Dragon Scale Armor can be worn to see the full effects of its armor set bonus.<br>
+	- Rebalanced essentially all tool sets, armor sets, and weapons.<br>
+	- Added Nightmare Scales, Basilisk Scales, Moth Scales, Mobzille Scales, Emperor Scorpion Scales, Sea Viper Tongues, Vortex Eyes, and Worm Teeth.<br>
+	- Added new boat variants for every wood type in CA.<br>
+	- Added Basilisk Sword, and a recipe for it.<br>
+	- Reworked several recipes - specifically for the Battle Axe, Slayer Chainsaw, Big Bertha, and Attitude Adjuster.<br>
+	- Added recipe for the Nightmare Sword, .<br>
+	- Added Blue Fish, Sun Fish, Gray Fish, Pink Fish, and Fire Fish.<br>
+	- Added Popcorn.<br>
+	- Updated Whale Spawn Egg texture.<br>
+	- Updated Giant Spawn Egg texture.<br>
+	- Updated Poison Sword texture.<br>
+	- Updated Slayer Chainsaw. Upon right clicking, it will turn on, making it effective for destroying trees and large chunks of wood but consuming more durability.<br>
+	- The Ray Gun and Thunder Staff can now be enchanted.<br>
+	- Added several tags for all fossils, alongside an all-inclusive "fossils" tag.<br>
+	<br>
+	<b>Blocks:</b> <br>
+	- Added many new blocks and vegetation to accomodate for every color variant of the crystal blocks.<br>
+	- Crystal blocks now have 3 new colors - Pink, Orange, and Blue.<br>
+	- Added new door variants for every wood type in CA.<br>
+	- Added Nightmare Scale Block, Basilisk Scale Block, Mobzilla Scale Block, Moth Scale Block, Water Dragon Scale Block, and Emperor Scale Block.<br>
+	- Fixed leaf carpets not placing several on 1 block due to hitbox inaccuracies.<br>
+	- Added signs for every wood type in CA.<br>
+	- Added new crystal vegetation.<br>
+	- Re-organized the CA Fossils tab.<br>
+	- Added new fossils - The Fossilised Beaver, Crystalized Carrot Pig, and Fossilised Lettuce Chicken.<br>
+	- Tweaked the light values of all torches added by CA.<br>
+	- Added Rhinestone, alongside a new set of blocks made of Rhinestone. Rhinestone generates in Mining Paradise by default, but that can be edited in the common config.<br>
+	- Sandstone fossils can now be defossilized in a Copper Defossilizer.<br>
+	<br>
+	<b>Entities:</b> <br>
+	Oh boy, now THIS is the main part of the update..<br>
+	(Almost every mob here is subject to being updated, improved, or straight up overhauled in future patches/major updates)<br>
+	- Added a new villager type - The Archaeologist. His trades revolve around fossils, and defossilizer-related items.<br>
+	- All necessary ground AI has been reworked and majorly improved (Swimming AI has only been slightly tweaked, Flying AI remains the same until a future update).<br>
+	- The Robo Pounder has been overhauled:<br>
+	* He can now break any block under harvest level 3 (except Robo Blocks). <br>
+	* He has 3 attacks, 2 of which including varying animations.<br>
+	* His first new attack is the "Robo Punch". It's a basic punch attack which deals a lot of damage and knockback. It is, however, a bit slow to charge up.<br>
+	* His second new attack is the "Side Sweep". It's a quick AOE attack which he uses frequently if surrounded by several enemies.<br>
+	* His final attack, and perhaps his most powerful, is the "Rage Run". Once he activates the rage run, his AI will become similar to that of an enraged bull. He will be triple armored for the first 2 seconds of his rage run, breaking ANY block, then revert to his old properties, but having double armor. As he rage runs, he will deflect all projectiles launched at him and armor himself against explosions, meaning the only means of damaging him while he's enraged is through melee combat. The lower his health gets, the faster and shorter (and more frequent) his rage runs will be. There are 4 stages to this: Stage 1 (above 150 HP/full health, 300HP), Stage 2 (under 150 HP), Stage 3 (Under 75 HP), and Stage 4 (Under 50 HP). While he's most powerful when enraged, he's also vulnerable. Placing enough blocks of harvest level 3 or higher (or Robo Blocks) in front of him and causing him to collide, or luring him underwater/under lava, will cause him to enter a state called "Rage Crash". He will be disabled for any time between 3 and 10 seconds. He will be vulnerable to all projectiles and melee attacks, but still remain resistant to explosions. Once he has rebooted, if he is critically low on health, chances are that he'll start rage running again immediately.<br>
+	* Every time he is damaged, he will emit pink spark particles to indicate damage.<br>
+	* Under 25 HP, the Robo Pounder will emit smoke to indicate that he's close to death.<br>
+	* He will only spawn at night in Village Mania.<br>
+	- The Hercules Beetle has been overhauled:<br>
+	* It now has 3 states of being.<br>
+	* It now also has 2 attacks, and a defense mechanism.<br>
+	* Its first state is "Docile". It will usually spawn docile, sleeping undisturbed. While docile, if it has lost any health, it will regenerate (1HP/sec). If it is damaged by any means, or triggered by a nearby target, it will enter its second state of being.
+	* If the Hercules Beetle is undisturbed for a while when it's awake, and is on land, it will quickly go back to being docile.<br>
+	* Its second state is "Defensive". It will only become defensive if it is below half health (125 HP), or if it is awakened from its docile state. Currently, its defensive state involves it flapping its wings at an immense force, repelling almost all projectiles, any items, and any entities that happen to be near it. If it is in a battle and is getting lower on HP, it will enter this state more frequently in order to attempt to increase its survivability as much as possible. While defensive, it will prove difficult, if not almost impossible, to get to it, but its armor is halved during this state, as it exposes itself to flap its wings. So any projectiles that do reach it will deal increased damage.<br>
+	* Its third state is "Offensive". This will be its state for the majority of the battle, as it uses its 2 attacks to force the opposition down to defeat.<br>
+	* Its first attack is the "Hard Swing". This attack causes any enemies without an immense amount of knockback resistance to fly in the air, as well as dealing a lot of damage.<br>
+	* Its second (and as of now, final) attack is the "Munch" attack. The Hercules Beetle will attempt to grab its target with its mouth. If it is successful, it will munch on the target for a total of 100 ticks (5 seconds) before throwing them up in the air. If a grab is unsuccessful but the target is still within attack range, it will deal half the damage of the "Hard Swing" attack.<br>
+	* It will only spawn during night time on mountains, including Dense Mountains inside Mining Paradise.<br>
+	- The Ent has been overhauled:<br>
+	* He now has 4 new variants - Apple, Cherry, Peach, and Skywood, none of which have a dungeon or fossil as of now.<br>
+	* He now has 2 attacks.<br>
+	* His first attack is the standard "Wooden Punch". It is a standard punch attack which deals decent damage and some knockback.<br>
+	* His second attack is the "Ent Smash". This attack is an AOE attack which he will use if he is surrounded by enemies/targets, or too far away from his target(s). It deals decent damage, and knocks anybody without decent knockback resistance up into the air.<br>
+	* He will only spawn in his dungeons, with the respective variant.<br>
+	- Fish AI has been slightly tweaked.<br>
+	- The Whale has been remodeled and retextured (and is still W.I.P). It can also become beached. When on land, the Whale will only take accumilating damage from sunburn, not loss of breath. Upon a whale's death, there is a chance that it will explode. This chance is higher if it has died beached or due to sunburn.<br>
+	- The Wasp has recieved a remodel and retexture.<br>
+	- The Stink Bug now has 16 variants, and emits these disgusting, new fart particles.<br>
+	- Added Baby Stink Bug.<br>
+	- The Frog has been renamed to the Tree Frog.<br>
+	- Added a new variant for the Apple Cow - The Ultimate Apple Cow. It is only obtainable by breeding 2 Enchanted Golden Apple Cows, very rarely. It cannot be bred, and there is no config option for the Ultimate Apple Cow to be bred.<br>
+	- Beavers will now occasionally go up to wooden logs and chomp on them.<br>
+	- Lava Eels can now actually move around in lava lakes.<br>
+	- Fish entities now rotate on land.<br>
+	- Dimetrodon AI has been slightly tweaked.<br>
+	- Added a new animal - The Lettuce Chicken.<br>
+	- All other entities will be updated and overhauled in future patches/major updates.<br>
+	<br>
+	<b>World Generation:</b> <br>
+	- Overhauled the Acacia, Birch, Dark Oak, Jungle Ent Trees.<br>
+	- Added a new type of Wasp Nest - the Giant "Mining" Wasp Nest. This Wasp Nest can be found within the Stalagmite Valley in Mining Paradise.<br>
+	- Reworked Mining Paradise - the Stalagmite Valley now features better cave generation and giant stalagmites, while the Dense Mountains have significantly increased in size.<br>
+	- Tweaked spawn rates in Mining Paradise and Village Mania.<br>
+	- Added new variants for the crystal trees inside Crystal World, each featuring a set of new blocks corresponding to each new color/variant.<br>
+	- Added a config option for enabling/disabling ore generation on stalagmites, as it is still quite unoptimized and thus may require a more powerful computer due to the server thread lagging/freezing.<br>
+	- Reworked tree generation for Apple, Cherry, and Peach trees. They now look a little nicer, and are a bit bigger.<br>
+	- Tweaked some ore spawning rates.
+</p>

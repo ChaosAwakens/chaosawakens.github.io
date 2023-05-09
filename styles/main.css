@@ -1,0 +1,46 @@
+﻿body {
+	background-color: black;
+}
+
+.background-image {
+	display: block;
+	width: 100%;
+	filter: brightness(55%);
+}
+
+.background-container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.image-text {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+h1 {
+	font-family: "Press Start 2P", cursive;
+}
+
+@media (max-width: 1050px) {
+	.background-container {
+		position: unset;
+	}
+
+	.image-text {
+		position: unset;
+		font-size: 18px;
+		padding: 2rem;
+		left: 0;
+		transform: translate(0, 0);
+	}
+}
+
+@media (max-width: 600px) {
+	.image-text {
+		font-size: 14px;
+	}
+}

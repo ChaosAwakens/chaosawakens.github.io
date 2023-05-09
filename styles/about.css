@@ -1,0 +1,122 @@
+﻿body {
+	background-color: black;
+}
+
+.background-image {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	display: block;
+	width: calc(100% - 2rem);
+	filter: brightness(55%);
+}
+
+.background-container {
+	position: relative;
+	text-align: left;
+	color: white;
+}
+
+p > a {
+	text-decoration: underline;
+}
+
+p {
+	color: #ccc;
+}
+
+p > strong {
+	color: white;
+}
+
+.image-text {
+	position: absolute;
+	top: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 0.95rem;
+}
+
+@media(max-width: 1860px) {
+	.image-text {
+		font-size: 0.9rem;
+	}
+}
+
+@media(max-width: 1795px) {
+	.image-text {
+		font-size: 0.85rem;
+	}
+}
+
+@media(max-width: 1678px) {
+	.image-text {
+		font-size: 0.8rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	.background-image {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+		width: calc(100% - 4rem);
+	}
+}
+
+@media(max-width: 1625px) {
+	.background-container {
+		position: unset;
+	}
+
+	.image-text {
+		position: unset;
+		font-size: 0.8rem;
+		padding: 2rem;
+		left: 0;
+		transform: translate(0, 0);
+	}
+
+	.background-image {
+		margin: 0.5rem 20rem 0;
+		display: unset;
+		position: relative;
+		top: 0;
+		width: calc(100% - 40rem);
+	}
+}
+
+@media(max-width: 1565px) {
+	.background-image {
+		margin: 0.5rem 15rem 0;
+		width: calc(100% - 30rem);
+	}
+}
+
+@media(max-width: 1400px) {
+	.background-image {
+		margin: 0.5rem 10rem 0;
+		width: calc(100% - 20rem);
+	}
+}
+
+@media(max-width: 1165px) {
+	.background-image {
+		margin: 0.5rem 5rem 0;
+		width: calc(100% - 10rem);
+	}
+}
+
+@media(max-width: 970px) {
+	.background-image {
+		margin: 0.5rem 2.5rem 0;
+		width: calc(100% - 5rem);
+	}
+}
+
+@media(max-width: 810px) {
+	.background-image {
+		margin: 0.5rem 0.5rem 0;
+		width: calc(100% - 1rem);
+	}
+}
